@@ -1,0 +1,254 @@
+
+      <div id="settings-currency-blotter" ui-jq="dialog" ui-options="{autoOpen:false, modal: true, closeOnEscape: true, draggable: false, title: 'Settings: Currency Blotter', dialogClass: 'fxd-dialog', resizeable: false, width: '44.375rem'}" ng-controller="settingsCurrencyBlotter">
+            <div ui-jq="tabs">
+              <ul class="tabs">
+                <li class="tab-title">
+                  <a href="#scb-general">General</a>
+                </li>
+                <li class="tab-title">
+                  <a href="#scb-conditions">Conditions</a>
+              </ul>
+              <div class="tabs-content row bcontent">
+                <div id="scb-general" class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end content">
+                  <div class="row">
+                    <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns">
+                      <span class="section-head">Select Layout</span>
+                      <div class="row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <input type="radio" name="layout" class="layout-radio"/>
+                          <label class="bold">Tabular</label>
+                          <div class="col-3-layout layout-grid right">
+                            <div class="row collapse">
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bgred">
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bggray">
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end bglightgray">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <input type="radio" name="layout" class="layout-radio"/>
+                          <label class="bold">List</label>
+                          <div class="row-3-layout layout-grid right">
+                            <div class="row collapse">
+                              <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns bgred">
+                              </div>
+                              <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns bggray">
+                              </div>
+                              <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns bglightgray">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <input type="radio" name="layout" class="layout-radio"/>
+                          <label class="bold">Grid</label>
+                          <div class="grid-3-3-layout layout-grid right">
+                            <div class="row collapse">
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bgred">
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bggray">
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end bglightgray">
+                              </div>
+                            </div>
+                            <div class="row collapse">
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bggray">
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bglightgray">
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end bggray">
+                              </div>
+                            </div>
+                            <div class="row collapse">
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bglightgray">
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bggray">
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end bgred">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="xxlarge-7 xlarge-7 large-7 medium-7 small-7 columns end left-divider">
+                      <span class="section-head">CCY Pair Group</span>
+                      <div class="row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <select class="select2 radius" ui-jq="select2">
+                            <option value="">Currency Group Name</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns">
+                          <select class="select2 radius margin-hack" ui-jq="select2">
+                            <option value="eur-usd">EUR USD</option>
+                          </select>
+                        </div>
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+                          <button class="icon-button radius">+</button>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <label class="bold">Already Added</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns radius ccy-pair-box">
+                          <div>
+                            <input type="checkbox" name="ccy-pair"><label>EUR/USD</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="ccy-pair"><label>GBP/USD</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="ccy-pair"><label>EUR/USD</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="ccy-pair"><label>GBP/USD</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="ccy-pair"><label>NZD/USD</label>
+                          </div>
+                          <div class="text-center">
+                            <button class="disabled tiny primary round radius uppercase bold margin-0">Remove</button>
+                          </div>
+                        </div>
+                        <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns end">
+                          <div class="margin-9">
+                            <div>
+                              <button class="icon-button"><span>&laquo;</span></button>
+                            </div>
+                            <div>
+                              <button class="icon-button"><span>&lsaquo;</span></button>
+                            </div>
+                            <div class="button-vertical-spacing"></div>
+                            <div>
+                              <button class="icon-button"><span>&rsaquo;</span></button>
+                            </div>
+                            <div>
+                              <button class="icon-button"><span>&raquo;</span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns"> 
+                      <button class="tiny primary radius round uppercase right bold">Save</button>
+                      <button class="tiny secondary radius round uppercase bold right">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="scb-conditions" class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end content">
+                  <div class="form-widget">
+                    <div class="header">
+                      <h4 class="heading">My Conditions ({{conditions.length}})</h4>
+                    </div>
+                    <div class="content">
+                      <form>
+                      <ul class="list">
+                        <li ng-repeat="condition in conditions">
+                        <input type="radio" ng-model="$parent.conditionVal" ng-value="condition.conditionVal" name="conditionVal"/>
+                          <label>When </label>
+                          <span class="highlight currency-pair uppercase">{{condition.currencyPair}}</span>
+                          <span class="highlight option">{{condition.option}}</span>
+                          is
+                          <span class="highlight comparision">{{condition.comparision}}</span>
+                          then
+                          <span class="highlight action uppercase">{{condition.action}}</span>
+                          <a class="close right" href="#" ng-show="$parent.conditionVal=={{condition.conditionVal}}">
+                            <span class="icon-closered">&times;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </form>
+                    </div>
+                  </div>
+
+                  <div class="form-widget light">
+                    <div class="header">
+                      <h4 class="heading">Add New Conditions</h4>
+                    </div>
+                    <div class="content black">
+                      <div class="row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <label class="uppercase">When</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns">
+                          <select class="select2 radius" ui-jq="select2">
+                            <option value="eur-usd">EUR/USD</option>
+                            <option value="gbp-usd">GBP/USD</option>
+                            <option value="jpy-usd">JPY/USD</option>
+                          </select>
+                        </div>
+                        <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns end">
+                          <select class="select2 radius" ui-jq="select2">
+                            <option value="buy">Buy</option>
+                            <option value="sell">Sell</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <label class="uppercase">Is</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns">
+                          <select class="select2 radius" ui-jq="select2">
+                            <option value=">">Greater Than</option>
+                            <option value="between">Between</option>
+                            <option value="=">Equals</option>
+                          </select>
+                        </div>
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+                          <input type="number" class=radius"/>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <label class="uppercase">Then</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns">
+                          <select class="select2 radius" ui-jq="select2">
+                            <option value="prepare-booking">Prepare Booking</option>
+                            <option value="quote">Quote</option>
+                            <option value="notify">Notify</option>
+                          </select>
+                        </div>
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+                          <button class="tiny button secondary round radius uppercase right">Add</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                      <button class="tiny primary button round radius uppercase bold right">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>

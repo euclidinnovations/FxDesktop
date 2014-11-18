@@ -1,0 +1,77 @@
+
+      <div id="settings-charts" ui-jq="dialog" ui-options="{autoOpen:false, modal: true, closeOnEscape: true, draggable: false, title: 'Settings: Charts', dialogClass: 'fxd-dialog', resizeable: false, width: '35.250rem'}">
+        <form>
+        <div class="bcontent">
+          <div class="row">
+            <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns end"> 
+              <label class="bold">Chart Type
+                <br/>
+                <select class="select2 radius" ui-jq="select2">
+                  <option vlaue="bar">Bar</option>
+                  <option vlaue="line">Line</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns"> 
+              <label class="bold">Range</label>
+              <div class="row black">
+                <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns"> 
+                    <select class="select2 radius" ui-jq="select2">
+                      <option vlaue="bar">1m</option>
+                      <option vlaue="line">10m</option>
+                    </select>
+                </div>
+                <div class="xxlarge-2 xlarge-2 large-2 medium-2 small-2 columns text-center"> 
+                  <label class="ranger bold">to</label>
+                </div>
+                <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns"> 
+                    <select class="select2 radius" ui-jq="select2">
+                      <option vlaue="bar">8m</option>
+                      <option vlaue="line">20m</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end"> 
+              <label class="bold">Step</label>
+              <div class="row black">
+                <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns"> 
+                    <select class="select2 radius" ui-jq="select2">
+                      <option vlaue="bar">1w</option>
+                      <option vlaue="line">1d</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns"> 
+              <label class="bold">Data
+                <br/>
+                <select class="select2 radius" ui-jq="select2">
+                  <option vlaue="bar">Currency</option>
+                  <option vlaue="line">Line</option>
+                </select>
+              </label>
+            </div>
+            <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns end"> 
+              <label class="bold">Data Point
+                <br/>
+                <select class="select2 radius" ui-jq="select2">
+                  <option vlaue="bar">USD</option>
+                  <option vlaue="line">GBP</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns"> 
+              <button class="tiny primary radius round uppercase right bold">Save</button>
+              <button class="tiny secondary radius round uppercase bold right">Cancel</button>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>

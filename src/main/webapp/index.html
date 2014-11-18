@@ -1,0 +1,1892 @@
+<!-- saved from url=(0037)http://localhost:81/fxdesktop_ver_1/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}</style>
+<title>wells</title>
+
+<link rel="stylesheet" type="text/css" href="./wells_files/select2.css" media="all">
+<link rel="stylesheet" type="text/css" href="./wells_files/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="./wells_files/jquery-ui.css" media="all">
+<link rel="stylesheet" type="text/css" href="./wells_files/jquery-ui.theme.css" media="all">
+<link rel="stylesheet" type="text/css" href="./wells_files/jquery-ui.structure.css" media="all">
+<link rel="stylesheet" type="text/css" href="./wells_files/jqueryui-editable.css" media="all">
+<link rel="stylesheet" type="text/css" href="./wells_files/jquery.datepick.css" media="all">
+<link rel="stylesheet" type="text/css" href="./wells_files/ng-grid.css" media="all">
+<link rel="stylesheet" type="text/css" href="./wells_files/app.css" media="all">
+
+<!-- ExtJS from CDN -->    
+<!-- <link rel="stylesheet" type="text/css" href="http://cdn.sencha.com/ext/trial/5.0.0/build/packages/ext-theme-neptune/build/resources/ext-theme-neptune-all.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="http://cdn.sencha.io/extjs-4.1.1-gpl/resources/css/ext-all.css"> --> 
+<link rel="stylesheet" type="text/css" href="./wells_files/resources/css/ext-all.css">
+<link rel='stylesheet' type='text/css' href='./wells_files/css/styles.css' media='all' id='theme-dynamic-styles-css' />
+<link rel="stylesheet" type="text/css" href="./wells_files/css/BoxSelect.css" />
+
+<meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"><style type="text/css" id="ng1415082168269">.ng1415082168269 .ngCanvas { width: 100px; }.ng1415082168269 .ngRow { width: 100px; }.ng1415082168269 .ngCanvas { width: 100px; }.ng1415082168269 .ngHeaderScroller { width: 117px}.ng1415082168269 .col0 { width: 25px; left: 0px; height: 30px }.ng1415082168269 .colt0 { width: 25px; }.ng1415082168269 .col1 { width: 25px; left: 25px; height: 30px }.ng1415082168269 .colt1 { width: 25px; }.ng1415082168269 .col2 { width: 25px; left: 50px; height: 30px }.ng1415082168269 .colt2 { width: 25px; }.ng1415082168269 .col3 { width: 25px; left: 75px; height: 30px }.ng1415082168269 .colt3 { width: 25px; }</style></head>
+<body ng-app="Dashboard" ng-controller="AppController" class="ng-scope">
+  <!-- top bar starts -->
+  <nav class="top-bar color-top-bar ng-scope" data-topbar="" role="navigation" data-options="is_hover:false" ng-controller="HeaderController">
+    <ul class="title-area"> 
+      <li class="name">
+        <h1 id="complogo">           
+        </h1>
+      </li>
+    </ul>
+
+    <section class="top-bar-section top-bar-menu">
+      <ul class="right menu row collapse">
+        <li class="small-half columns" id="hlines">            
+        </li>
+        <li class="small-half columns">
+          <span class="divider"></span>
+        </li>
+        <li class="xxlarge-6 xlarge-6 large-6 medium-6 small-7 columns">
+         <div class="row collapse padtop11">
+           <div class="large-3 medium-4 small-4 columns" id="searchDrop">
+
+           </div>
+           <div class="large-8 medium-7 small-7 columns" id="multiSearch">
+
+           </div>
+           <div class="large-1 medium-1 small-1 columns">
+            <button type="submit" class="postfix half-round black" value="go">Go</button>
+          </div>
+        </div>
+      </li>
+      <li class="small-half columns">
+        <span class="divider"></span>
+      </li>
+      <li class="xxlarge-3 xlarge-3 large-3 medium-3 small-4 columns"><!-- has-dropdown -->
+        <div class="row user-container">
+          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns" id="profPic">
+
+          </div>
+          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns martop3">
+            <div class="user-details row collapse">
+              <div class="xxlarge-11 xlarge-11 large-11 medium-11 small-11 columns" id="userInfo">
+
+              </div>
+
+              <div class="small-1 columns margin-hack" id="dropInfo">
+                   <!--  <a href="javascript:void(0)" class=" view-close-action-user-dropdown action-show-user-options more action-show-user-options" title="more login history">
+                      <span class="icon-down"></span>
+                    </a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="" id="userDrop">
+              <li>
+                <button class="tiny secondary radius round uppercase bold left">USER MANUAL</button>
+                <button class="tiny radius round uppercasei bold right">LOGOUT</button>
+              </li>
+            </ul>
+          </li>
+          <li class="small-half columns">
+            <span class="divider"></span>
+          </li>
+          <li class="xxlarge-1 xlarge-1 large-1 medium-1 small-2 columns">
+            <div id="alerts_notify">
+              <a href="javascript:void(0)" class="action-notification">
+                <span class="icon-notification"></span>
+                <span class="icon-how-many-new">4</span>
+              </a>
+            </div>
+            <ul class="dropdown notifications" id="alerts_list"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small"><a class="parent-link js-generated" href="javascript:void(0)">
+              <span class="icon-notification"></span>
+              <span class="icon-how-many-new">4</span>
+            </a></li>
+            <li><a href="javascript:void(0)"><span class="icon-bullet"></span><span class="bold">EUR</span> - <span class="">434,766,565.00</span><span class="icon-greater-than"></span><span class="bold">USD;</span> 1W</a></li>
+            <li><a href="javascript:void(0)"><span class="icon-bullet"></span><span class="bold">GBP</span> - <span class="">344,343,684.00</span><span class="icon-greater-than"></span><span class="bold">USD;</span> 1W</a></li>
+            <li><a href="javascript:void(0)"><span class="icon-bullet"></span><span class="bold">NZD</span> - <span class="">384,938,393.00</span><span class="icon-greater-than"></span><span class="bold">USD;</span> 1W</a></li>
+            <li><a href="javascript:void(0)"><span class="icon-bullet"></span><span class="bold">USD</span> - <span class="">312,378,923.00</span><span class="icon-greater-than"></span><span class="bold">JYP;</span> 1W</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section></nav>
+
+    <!-- main section starts -->
+    <div class="main">
+      <!-- left panel start -->
+      <div class="sidebar-container" id="sidebar-container">
+        <section class="menu-left-panel">
+
+          <div class="left-panel-menu left-panel color-left-panel">
+            <ul class="side-nav color-side-nav">
+              <li class="home-link" id="fxHome">
+                <a href="javascript:void(0)" onclick="loadHome();" ng-click="prepareHome()">
+                  <span class="icon-home"></span>
+                  HOME
+                </a>
+              </li>
+              <li ng-click="prepareFxAdmin();" onclick="loadFxAdmin();" id="fxAdmin">
+                <a href="javascript:void(0)fx-admin">
+                  <span class="icon-fxadmin"></span>
+                  FX ADMIN
+                </a>
+              </li>
+              <li class="user-preference" id="fx_ireports">
+                <a>
+                  <span class="icon-ireport"></span>
+                  iREPORT
+                </a>
+              </li>                    
+              <li class="user-preference" id="fx_buffet">
+                <a>
+                  <span class="icon-userpreference"></span>
+                  BUFFET
+                </a>
+              </li>                    
+              <li class="user-preference" id="fx_cmr">
+                <a>
+                  <span class="icon-userpreference"></span>
+                  CMR
+                </a>
+              </li>
+            </ul> 
+          </div>      
+          
+       
+        </section>
+      </div>
+      <!-- left panel ends -->
+      <div class="main-content">
+        <!-- content panel starts -->
+        <div id="togglemargin" class="content-panel color-content-panel margin-content-panel ng-scope" ng-class="class" ng-controller="WidgetContainerController">
+          <div class="content-panel-header" ng-show="showHeader">
+            <div class="row fullwidth collapse">
+              <div class="xxlarge-9 xlarge-9 large-9 medium-7 small-4 columns">
+                <h2 class="content-panel-heading ng-binding" ng-bind="viewName">My Dashboard</h2>
+                <span class="window-name" ng-show="windowName">[<span ng-bind="windowName" class="ng-binding">Window 1</span>]</span>
+              </div>
+              <div class="xxlarge-3 xlarge-3 large-3 medium-5 small-8 columns ends">
+                <ul class="horizontal">
+                  <li style="padding-top: .313rem;" id="widgetOnOff">
+
+                  </li>
+                  <li class="left-divider width160">
+                    <div class="prepend-icon">
+                      <span class="icon-workspace"></span>
+                      <div id="wsDivID"></div>
+                      <!-- <select class="select2 workspace-select margin-b-0 ng-pristine ng-valid select2-offscreen" ng-model="currentWorkspace" ng-options="ws.name for ws in workspaces" tabindex="-1" title=""><option value="0">Workspace A</option><option value="1">Workspace B</option><option value="2" selected="selected">Workspace C</option><option value="3">Workspace D</option><option value="4">Workspace E</option></select> -->
+                    </div>
+                  </li>
+                </ul></div>
+              </div>
+            </div>
+            <div class="fxwidget" id="fxwidget-area" style="display:none;">
+              <div class="row fullwidth collapse">
+                <div class="fxwidget-left-panel" >
+                  <div id="fxwidget-container">
+                    <a href="javascript:void(0)" class="prev left" id="prevWidgets">
+                      <!-- <span class="icon-previous"></span> -->
+                    </a>
+                    <a href="javascript:void(0)" class="next right" id="nextWidgets">
+                      <!-- <span class="icon-next"></span> -->
+                    </a>
+
+                    <div id="fxdeskWidgets">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="fxwidget-controls">
+                  <div class="append fx-control-margin">
+                    <input class="search-box margin-b-0 radius ng-pristine ng-valid" type="text" placeholder="Search Widget" ng-model="widgetSearchFilter">
+                    <span class="icon-search"></span>
+                  </div>
+                  <a href="javascript:void(0)" class="sort-icon asc" ng-click="sortAscending=!sortAscending">
+                    <span class="icon-sort-horizontal"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row fullwidth dashboard-container">
+              <div class="container-parent">
+                <div class="widget-container active-content ui-droppable" droppable="">
+                  <div id="cptq_blotter">  
+                    <div id="currency_blotter"></div>
+
+                    <div id="position_blotter"></div>
+
+                    <div id="trade_blotter"></div>  
+
+                    <div id="quick_eyd_trade"></div>
+                  </div>
+                  <div class="columns end"></div>
+                </div>
+                <eyd-trade-view class="eyd-widget ng-isolate-scope" data="dataModel.eyd.trade">  <!-- content panel starts -->
+                <div ng-controller="EydTradeController" class="eyd_pricer-container content-panel color-content-panel ep ng-scope" style="display:none">
+                  <form class="ng-pristine ng-valid">
+                    <div class="row fullwidth ep-top-panel"><!-- .ep-top-panel starts -->
+                      <div class="xxlarge-2 xlarge-2 large-2 medium-2 small-2 columns vertical-align-middle">
+                        <h2 class="ep-top-panel-head">EYD Pricer</h2>
+                        <span class="divider"></span>
+                      </div>
+                      <div class="xxlarge-7 xlarge-7 large-7 medium-7 small-7 columns end">
+                        <div class="row">
+                          <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns">
+                            <label>Customer<br>
+                              <div class="select2-container select2 ng-pristine ng-valid" id="s2id_autogen6"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-7">&nbsp;</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen7" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-7" id="s2id_autogen7"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen7_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-7" id="s2id_autogen7_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-7">   </ul></div></div><select class="select2 ng-pristine ng-valid select2-offscreen" ng-model="customer" ng-options="(c.shortName +&#39; : &#39; + c.id+ &#39;/&#39; + c.fullName) for c in customers" tabindex="-1" title=""><option value="" class="">--Select</option><option value="0">djhl : 188001/Dan J Hill</option><option value="1">sjvr : 188001/Steve J Vernon</option><option value="2" selected="selected">gdlu : 188001/George D Lucas</option><option value="3">owka : 188001/Obie Wan Kanobie</option></select>
+                            </label>
+                          </div>
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>Specialist<br>
+                              <div class="select2-container select2 ng-pristine ng-valid" id="s2id_autogen8"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-9">&nbsp;</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen9" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-9" id="s2id_autogen9"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen9_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-9" id="s2id_autogen9_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-9">   </ul></div></div><select class="select2 ng-pristine ng-valid select2-offscreen" ng-model="specialist" ng-options="(s.fullName) for s in specialists" tabindex="-1" title=""><option value="" class="">--Select</option><option value="0">User 01</option><option value="1">User 02</option><option value="2" selected="selected">User 03</option><option value="3">User 04</option></select>
+                            </label>
+                          </div>
+                          <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns">
+                            <label>CCY Pair<br>
+                              <div class="select2-container select2 ng-pristine ng-valid" id="s2id_autogen10"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-11">&nbsp;</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen11" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-11" id="s2id_autogen11"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen11_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-11" id="s2id_autogen11_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-11">   </ul></div></div><select class="select2 ng-pristine ng-valid select2-offscreen" ng-model="ccp" ng-options="(c.ccy) for c in ccp" tabindex="-1" title=""><option value="" class="">--Select</option><option value="0">USD/EUR</option><option value="1">USD/GBP</option><option value="2">USD/CAD</option><option value="3">USD/AUD</option></select>
+                            </label>
+                          </div>
+                        </div> 
+                        <span class="divider"></span>
+                      </div>
+                      <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns end">
+                        <button class="radius round uppercase">COPY SUMMARY</button>
+                        <button class="radius round uppercase">QUICK TRADE</button>
+                      </div>
+                    </div><!-- .ep-top-panel ends -->
+                  </form>
+                  <div class="row fullwidth">
+                    <div class="xxlarge-7 xlarge-7 large-7 medium-7 small-7 columns eyd-left-panel">
+                      <div class="right-divider">
+                        <div class="row">
+                          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                            <div class="principle-tenor-section divider-top">
+                              <div class="row">
+                                <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns">
+                                  <label><span class="bold">Principal</span><br>
+                                    <input type="number" placeholder="Principle" ng-model="principal" class="text-right bold radius ng-pristine ng-valid ng-valid-number" id="principle">
+                                  </label>
+                                </div>
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns">
+                                  <label><span class="bold">Tenor</span><br>
+                                    <input type="text" ng-model="tenure" placeholder="Tenor" class="text-right bold radius ng-pristine ng-valid">
+                                  </label>
+                                </div>
+                                <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns eyd-pts-button-padding-hack">
+                                  <button class="tiny secondary radius round uppercase">Clear</button>
+                                  <button class="tiny radius round uppercase bold">Quote</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- .row ends here -->
+
+                        <div class="row">
+                          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                            <div class="divider-top">
+                              <div class="row">
+                                <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns border-right">
+                                  <h4 class="form-head">Rates</h4>
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Trader's Rate<br>
+                                        <input type="number" class="text-right radius percent bold" placeholder="Trader&#39;s Rate" value="-0.0500">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Customer's Rate<br>
+                                        <input type="number" class="text-right radius optional percent bold" placeholder="Customer&#39;s Rate" value="-0.5">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Option Strike (Benchmark Rate)<br>
+                                        <input type="number" class="text-right radius optional international-6 bold" placeholder="Option Strike (Benchmark Rate)" value="1.313700">
+                                        <span class="hint">0.3% itm</span>
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>FX Rate for Spot Date<span class="superstick">*</span><br>
+                                        <input type="number" class="text-right radius locked international-6 bold" placeholder="FX Rate for Spot Date" value="1.318300">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                </div><!-- column ends here -->
+                                <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns border-right">
+                                  <h4 class="form-head">Dates</h4>
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Deal Date<span class="superstick">*</span><br>
+                                        <input type="date" id="deal-date" class="text-left radius black bold behaviour-date is-datepick" placeholder="mm/dd/yyyy" value="8/27/2014">
+                                        <img id="deal-date-cal" class="ui-datepicker-trigger" src="./wells_files/calendar.png" alt="Select date" title="Select date">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Open Deposit on<br>
+                                        <input type="date" class="text-left radius bold behaviour-date is-datepick" placeholder="mm/dd/yyyy" value="8/29/2014">
+                                        <img class="ui-datepicker-trigger" src="./wells_files/calendar.png" alt="Select date" title="Select date">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Option Expiry on<span class="superstick">*</span><br>
+                                        <input type="date" class="text-left radius black bold behaviour-date is-datepick" placeholder="mm/dd/yyyy" value="9/26/2014">
+                                        <img class="ui-datepicker-trigger" src="./wells_files/calendar.png" alt="Select date" title="Select date">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Deposit Mature on<br>
+                                        <input type="date" class="text-left radius bold behaviour-date is-datepick" placeholder="mm/dd/yyyy" value="9/30/2014">
+                                        <img class="ui-datepicker-trigger" src="./wells_files/calendar.png" alt="Select date" title="Select date">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+
+                                </div><!-- column ends here -->
+                                <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                                  <h4 class="form-head">Profits &amp; trade</h4>
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>USD Profit<span class="superstick">*</span><br>
+                                        <input type="number" class="text-right radius unlocked currency bold" placeholder="0.00" value="1509.52">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Market Value of Option<br>
+                                        <input type="number" class="text-right radius currency bold" placeholder="0.00" value="7412.00">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Mid Rate Value of Option<br>
+                                        <input type="number" class="text-right radius currency bold" placeholder="0.00" value="7642.00">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+                                  <div class="row">
+                                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+                                      <label>Desired Rate ( % )<span class="superstick">*</span><br>
+                                        <input type="number" class="text-right radius percent-3 bold" placeholder="0.00%" value="7.000">
+                                      </label> 
+                                    </div>
+                                  </div><!-- input .row ends here -->
+
+                                </div><!-- column ends here -->
+                              </div><!-- .row ends here -->
+                            </div><!-- .rates-dates-profits-trade-section ends here -->
+                          </div><!-- .column ends here -->
+                        </div><!-- .row ends here -->
+                        <div class="row">
+                          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                            <div class="divider-top">
+                              <div class="row">
+                                <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns">
+                                  <label>Spot Delta Hedge
+                                    <input type="text" class="text-right radius bold" value="Sell 600,000 EUR/USD">
+                                  </label> 
+                                </div>
+                                <div class="xxlarge-7 xlarge-7 large-7 medium-7 small-7 columns end">
+                                  <label>Ops Instructions
+                                    <input type="text" class="text-right radius optional">
+                                  </label> 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .left-panel ends here -->
+
+                    <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns end quotation">
+                      <div class="row quotation-head-container">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <h3 class="quotation-head">EUR/USD</h3>
+                        </div>
+                      </div>
+                      <div class="row info-row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <div class="border-bottom">
+                            <div class="row">
+                              <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns infolet">
+                                <div class="right info divider">
+                                  <p class="label">
+                                    Principal
+                                  </p>
+                                  <p class="value">
+                                    0.00
+                                  </p>
+                                </div>
+                              </div>
+
+                              <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                <div class="right info divider">
+                                  <p class="label">
+                                    Day Count
+                                  </p>
+                                  <p class="value">
+                                    0
+                                  </p>
+                                </div>
+                              </div> 
+                              <div class="xxlarge-2 xlarge-2 large-2 medium-2 small-2 columns infolet">
+                                <div class="right info divider">
+                                  <p class="label">
+                                    Tenor
+                                  </p>
+                                  <p class="value">
+                                    0
+                                  </p>
+                                </div>
+
+                              </div> 
+                              <div class="xxlarge-2 xlarge-2 large-2 medium-2 small-2 columns end infolet">
+                                <div class="info unit highlight bigger">
+                                  M 
+                                </div>
+                              </div> 
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- .info-row ends here -->
+                      <div class="row info-row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <div class="border-bottom">
+                            <div class="row">
+                              <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns infolet">
+                                <div class="right info divider">
+                                  <p class="label">
+                                    Market Value of Option
+                                  </p>
+                                  <p class="value bigger highlight">
+                                    0.00
+                                  </p>
+                                </div>
+                              </div>
+
+                              <div class="xxlarge-7 xlarge-7 large-7 medium-7 small-7 columns infolet">
+                                <div class="right info">
+                                  <p class="label">
+                                    Equals to USD Option Value
+                                  </p>
+                                  <p class="value bigger">
+                                    0.00
+                                  </p>
+                                </div>
+                              </div> 
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- info-row ends here -->
+                      <div class="row info-row">
+                        <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                          <div class="border-bottom">
+                            <div class="row">
+                              <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns infolet">
+                                <div class="right info divider">
+                                  <p class="label">
+                                    Custy Premium in Deposit Currency
+                                  </p>
+                                  <p class="value">
+                                    0.00
+                                  </p>
+                                </div>
+                              </div>
+
+                              <div class="xxlarge-7 xlarge-7 large-7 medium-7 small-7 columns infolet">
+                                <div class="right info">
+                                  <p class="label">
+                                    Total Principal in Deposit Currency
+                                  </p>
+                                  <p class="value">
+                                    0.00
+                                  </p>
+                                </div>
+                              </div> 
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- info-row ends here -->
+                      <div class="infobar-container">
+                        <div class="row info-row">
+                          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                            <div class="border-bottom">
+                              <div class="row">
+                                <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="label">
+                                      EYD Gain
+                                    </p>
+                                    <p class="label normal">
+                                      (Premium and interest)
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="value">
+                                      0.00
+                                    </p>
+                                  </div>
+                                </div> 
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-right">
+                                    <p class="value">
+                                      0.00
+                                    </p>
+                                  </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- info-row ends here -->
+                        <div class="row info-row">
+                          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                            <div class="border-bottom">
+                              <div class="row">
+                                <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="label">
+                                      Principal and Interest
+                                    </p>
+                                    <p class="label normal">
+                                      (To be headged)
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="value red">
+                                      0.00
+                                    </p>
+                                  </div>
+                                </div> 
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-right">
+                                    <p class="value">
+                                      APY
+                                    </p>
+                                  </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- info-row ends here -->
+                        <div class="row info-row">
+                          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                            <div class="border-bottom">
+                              <div class="row">
+                                <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="label">
+                                      Enhanced Field if held to Maturity
+                                    </p>
+                                    <p class="label normal">
+                                      (Annualized Rate)
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="value red">
+                                      0.00 %
+                                    </p>
+                                  </div>
+                                </div> 
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-right">
+                                    <p class="value">
+                                      0.00 %
+                                    </p>
+                                  </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- info-row ends here -->
+                        <div class="row info-row">
+                          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                            <div class="border-bottom">
+                              <div class="row">
+                                <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="label">
+                                      Principle/Gain
+                                    </p>
+                                    <p class="label normal">
+                                      if converted in <span class="label">USD</span>
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="value">
+                                      0.00
+                                    </p>
+                                  </div>
+                                </div> 
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-right">
+                                    <p class="value">
+                                      0.00
+                                    </p>
+                                  </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- info-row ends here -->
+                        <div class="row info-row">
+                          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                            <div class="border-bottom">
+                              <div class="row">
+                                <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="label">
+                                      Amount paid in USD if Triggered
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="value">
+                                      0.00
+                                    </p>
+                                  </div>
+                                </div> 
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-right">
+                                    <p class="value">
+                                      APY
+                                    </p>
+                                  </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- info-row ends here -->
+                        <div class="row info-row">
+                          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                            <div class="border-bottom">
+                              <div class="row">
+                                <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="label">
+                                      Annualized Yield if client called away
+                                    </p>
+                                  </div>
+                                </div>
+
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-left">
+                                    <p class="value red">
+                                      0.00 %
+                                    </p>
+                                  </div>
+                                </div> 
+                                <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns infolet">
+                                  <div class="info padding-right">
+                                    <p class="value">
+                                      0.00 %
+                                    </p>
+                                  </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- info-row ends here -->
+                      </div><!--.infobar-container ends here -->
+
+                    </div><!-- .quotation ends here -->
+                  </div><!-- .row ends here -->
+
+                  <div class="row fullwidth table-container">
+                    <table>
+                      <tbody><tr>
+                        <th class="note text-left" width="43%">Enter Non Contractable Ticket in Customer's <span class="bold">WTWEB EYD File to Capture USD Profit</span></th>
+                        <td>#N/A</td>
+                        <td>#N/A</td>
+                        <td>#N/A</td>
+                        <td>#N/A</td>
+                        <td>#N/A</td>
+                      </tr>
+                      <tr>
+                        <th class="text-left bold">Profit Contract #</th>
+                        <td class="disabled"></td>
+                        <td class="text-center"></td>
+                        <td class="no-show"></td>
+                        <td class="no-show"></td>
+                        <td class="no-show"></td>
+                      </tr>
+                    </tbody></table>
+
+                    <table role="grid">
+                      <tbody>
+                        <tr>
+                          <td class="text-left" colspan="2" rowspan="2" width="43%">Enter Contractible Spot Ticket in Customer's<br>WTWEB EYD File to convert custy USD Premium to FX (Trader - Retail)</td>
+                          <td colspan="3">
+                            <div class="row">
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns text-left">
+                                Wells Fargo buys
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns text-center">
+                                USD
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end text-center">
+                                499.38
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-left">Use Spot Rate of</td>
+                          <td class="text-left">For value of</td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">
+                            <div class="row">
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns text-left">
+                                and sells to client
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns text-center">
+                                EUR
+                              </div>
+                              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end text-center">
+                                €74.67
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-right">1,317610</td>
+                          <td class="text-right">8/29/2014</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table role="grid" class="text-left td-border-spacing">
+                      <thead>
+                        <tr>
+                          <th width="23%">Book Euro Deposit in OPICs in Customer's</th>
+                          <th width="18%">National Amount</th>
+                          <th>Currency</th>
+                          <th>%</th>
+                          <th>Effective Date</th>
+                          <th>Maturity</th>
+                          <th>Basic</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="fake-margin">WTWEB EYD name</span></td>
+                          <td><span class="fake-margin">100,074.67</span></td>
+                          <td><span class="fake-margin">EUR</span></td>
+                          <td><span class="fake-margin">-0.5%</span></td>
+                          <td><span class="fake-margin">29-Aug-2014</span></td>
+                          <td><span class="fake-margin">30-Sep-2014</span></td>
+                          <td><span class="fake-margin">360</span></td>
+                        </tr>
+                        <tr>
+                          <td><span class="fake-margin">WTWEB EYD name</span></td>
+                          <td><span class="fake-margin">100,074.67</span></td>
+                          <td><span class="fake-margin">EUR</span></td>
+                          <td><span class="fake-margin">-0.5%</span></td>
+                          <td><span class="fake-margin">29-Aug-2014</span></td>
+                          <td><span class="fake-margin">30-Sep-2014</span></td>
+                          <td><span class="fake-margin">360</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+                <!-- content panel ends -->
+
+              </eyd-trade-view>
+              <preferences-view data="dataModel.prefs" class="ng-isolate-scope"><div ng-controller="PreferencesController" class="preferences-container ng-scope" style="display:none">
+              <ul class="tabs" data-tab="" role="tablist">
+                <li class="tab-title active" role="presentational">
+                  <a href="javascript:void(0)workspace-a" role="tab" tabindex="0" aria-selected="true" controls="workspace-a">
+                    Workspace A
+                  </a>
+                </li>
+                <li class="tab-title" role="presentational">
+                  <a href="javascript:void(0)workspace-b" role="tab" tabindex="0" aria-selected="true" controls="workspace-b">
+                    Workspace B
+                  </a>
+                </li>
+                <li class="tab-title" role="presentational">
+                  <a href="javascript:void(0)workspace-c" role="tab" tabindex="0" aria-selected="true" controls="workspace-c">
+                    Workspace C
+                  </a>
+                </li>
+                <li class="tab-title" role="presentational">
+                  <a href="javascript:void(0)workspace-d" role="tab" tabindex="0" aria-selected="true" controls="workspace-d">
+                    Workspace D
+                  </a>
+                </li>
+                <li class="tab-title" role="presentational">
+                  <a href="javascript:void(0)workspace-e" role="tab" tabindex="0" aria-selected="true" controls="workspace-e">
+                    Workspace E
+                  </a>
+                </li>
+              </ul>
+
+
+
+              <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end tabs-content">
+                <section role="tabpanel" aria-hidden="false" class="content active" id="workspace-a">
+                  <div class="row border-bottom workspace-header">
+                    <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns">
+                      <ul class="horizontal">
+                        <li>
+                          <h3 id="workspace-a-head" class="editable workspace-name" data-type="text" data-pk="Workspace A" data-name="workspace" data-title="Enter Workspace Name..." data-url="">Workspace A</h3>
+                          <div class="edit-box">
+                            <input type="text" placeholder="Enter Workspace Name" value="Workspace A">
+                          </div>
+                          <div class="edit-box-hidden">
+                            <a href="javascript:void(0)workspace-a-head" class="show-edit-box action" data-editable-for="workspace-a-head"><span class="icon-edit"></span></a>
+                          </div>
+                          <div class="edit-box-buttons">
+                            <a href="javascript:void(0)" class="action"><span class="icon-done"></span></a>
+                          </div>
+                        </li>
+                        <li>
+                          <span class="divider"></span>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="i-desktop"><span class="icon-desktop  rotate-270"></span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+                      <ul class="right horizontal workspace-actions">
+                        <li>
+                          <button class="tiny secondary radius round uppercase margin-0">Reset</button>
+                        </li>
+                        <li>
+                          <button class="tiny radius round uppercase bold margin-0">Save Changes</button>
+                        </li>
+                      </ul>
+                    </div>  
+                  </div>
+                  <div class="row">
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                      <div class="user-preference-widget">
+                        <div class="up-widget-header-container">
+                          <h4 class="up-widget-header">Currency Blotter</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>Layout</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen12"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-13">Tabular</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen13" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-13" id="s2id_autogen13"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen13_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-13" id="s2id_autogen13_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-13">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="tabular">Tabular</option>
+                            <option value="tabular">Tabular</option>
+                            <option value="tabular">Tabular</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                          <label>Currency Group</label>
+                        </div>
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                          <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen14"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-15">G10</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen15" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-15" id="s2id_autogen15"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen15_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-15" id="s2id_autogen15_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-15">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                          <option value="g10">G10</option>
+                          <option value="g10">G10</option>
+                          <option value="g10">G10</option>
+                          <option value="g10">G10</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                        <label>Display fields</label>
+                      </div>
+                      <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                        <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen16"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-17">Bid, Ask</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen17" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-17" id="s2id_autogen17"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen17_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-17" id="s2id_autogen17_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-17">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                        <option value="bid-ask">Bid, Ask</option>
+                        <option value="bid-ask">Bid, Ask</option>
+                        <option value="bid-ask">Bid, Ask</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="up-widget-sub-section">
+                    <h5 class="up-widget-sub-section-head">Accessibility &amp; Shortcut Keys</h5>
+                    <div class="row">
+                      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                        <label>Command / Action</label>
+                      </div>
+                      <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                        <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen18"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-19">Add Currency</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen19" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-19" id="s2id_autogen19"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen19_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-19" id="s2id_autogen19_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-19">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                        <option value="add-currency">Add Currency</option>
+                        <option value="add-currency">Add Currency</option>
+                        <option value="add-currency">Add Currency</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                      <label>Shortcut Key</label>
+                    </div>
+                    <div class="xxlarge-7 xlarge-7 large-7 medium-7 small-7 columns end">
+                      <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen20"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-21">Ctrl + Shift + C</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen21" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-21" id="s2id_autogen21"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen21_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-21" id="s2id_autogen21_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-21">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                      <option value="ctrl-shift-c">Ctrl + Shift + C</option>
+                      <option value="ctrl-shift-c">Ctrl + Shift + C</option>
+                      <option value="ctrl-shift-c">Ctrl + Shift + C</option>
+                    </select>
+                  </div>
+                </div><!-- form el .row ends -->
+              </div><!-- .up-widget-sub-section ends -->
+            </div><!-- .up-widget-primary-section ends -->
+          </div><!-- .up-widget-section ends -->
+        </div><!-- .user-preference-widget ends -->
+      </div><!-- column 1 ends -->
+      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+        <div class="user-preference-widget">
+          <div class="up-widget-header-container">
+            <h4 class="up-widget-header">Position Blotter</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>Layout</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen22"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-23">Tabular</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen23" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-23" id="s2id_autogen23"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen23_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-23" id="s2id_autogen23_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-23">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="tabular">Tabular</option>
+                            <option value="tabular">Tabular</option>
+                            <option value="tabular">Tabular</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                          <label>Currencies</label>
+                        </div>
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                          <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen24"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-25">6 CCY</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen25" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-25" id="s2id_autogen25"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen25_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-25" id="s2id_autogen25_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-25">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                          <option value="6-ccy">6 CCY</option>
+                          <option value="6-ccy">6 CCY</option>
+                          <option value="6-ccy">6 CCY</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                        <label>Display fields</label>
+                      </div>
+                      <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                        <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen26"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-27">Net USD Position, Net...</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen27" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-27" id="s2id_autogen27"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen27_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-27" id="s2id_autogen27_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-27">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                        <option value="net-usd-position">Net USD Position, Net...</option>
+                        <option value="net-usd-position">Net USD Position, Net...</option>
+                        <option value="net-usd-position">Net USD Position, Net...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!-- .up-widget-primary-section ends -->
+              </div><!-- .up-widget-section ends -->
+            </div><!-- .user-preference-widget ends -->
+
+            <div class="user-preference-widget">
+              <div class="up-widget-header-container">
+                <h4 class="up-widget-header">Trade Blotter</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>Display fields</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen28"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-29">11 Fields</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen29" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-29" id="s2id_autogen29"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen29_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-29" id="s2id_autogen29_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-29">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="11-fields">11 Fields</option>
+                            <option value="11-fields">11 Fields</option>
+                            <option value="11-fields">11 Fields</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                          <label>Sort</label>
+                        </div>
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                          <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen30"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-31">6 Fields</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen31" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-31" id="s2id_autogen31"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen31_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-31" id="s2id_autogen31_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-31">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                          <option value="6-fields">6 Fields</option>
+                          <option value="6-fields">6 Fields</option>
+                          <option value="6-fields">6 Fields</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                        <label>Max Records</label>
+                      </div>
+                      <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                        <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen32"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-33">20</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen33" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-33" id="s2id_autogen33"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen33_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-33" id="s2id_autogen33_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-33">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                        <option value="20">20</option>
+                        <option value="20">20</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!-- .up-widget-primary-section ends -->
+              </div><!-- .up-widget-section ends -->
+            </div><!-- .user-preference-widget ends -->
+          </div>
+          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+            <div class="user-preference-widget">
+              <div class="up-widget-header-container">
+                <h4 class="up-widget-header">Charts</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>Chart Type</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen34"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-35">Bar</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen35" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-35" id="s2id_autogen35"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen35_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-35" id="s2id_autogen35_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-35">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="bar">Bar</option>
+                            <option value="bar">Bar</option>
+                            <option value="bar">Bar</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                          <label>Range</label>
+                        </div>
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                          <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen36"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-37">1m</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen37" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-37" id="s2id_autogen37"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen37_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-37" id="s2id_autogen37_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-37">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                          <option value="1m">1m</option>
+                          <option value="1m">1m</option>
+                          <option value="1m">1m</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                        <label>Step</label>
+                      </div>
+                      <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                        <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen38"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-39">1w</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen39" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-39" id="s2id_autogen39"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen39_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-39" id="s2id_autogen39_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-39">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                        <option value="1w">1w</option>
+                        <option value="1w">1w</option>
+                        <option value="1w">1w</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                      <label>Data</label>
+                    </div>
+                    <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                      <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen40"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-41">Currency</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen41" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-41" id="s2id_autogen41"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen41_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-41" id="s2id_autogen41_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-41">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                      <option value="currency">Currency</option>
+                      <option value="currency">Currency</option>
+                      <option value="currency">Currency</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                    <label>Data Point</label>
+                  </div>
+                  <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                    <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen42"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-43">USD</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen43" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-43" id="s2id_autogen43"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen43_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-43" id="s2id_autogen43_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-43">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                    <option value="usd">USD</option>
+                    <option value="usd">USD</option>
+                    <option value="usd">USD</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- .up-widget-primary-section ends -->
+          </div><!-- .up-widget-section ends -->
+        </div><!-- .user-preference-widget ends -->
+
+        <div class="user-preference-widget">
+          <div class="up-widget-header-container">
+            <h4 class="up-widget-header">Quick EYD Pricer</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>History</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen44"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-45">5</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen45" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-45" id="s2id_autogen45"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen45_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-45" id="s2id_autogen45_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-45">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div><!-- .up-widget-primary-section ends -->
+                  </div><!-- .up-widget-section ends -->
+                </div><!-- .user-preference-widget ends -->
+              </div>
+            </div>
+          </section>
+          <section role="tabpanel" aria-hidden="true" class="content" id="workspace-b">
+            <div class="row border-bottom workspace-header">
+              <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns">
+                <ul class="horizontal">
+                  <li>
+                    <h3 id="workspace-b-head" class="editable workspace-name" data-type="text" data-pk="Workspace A" data-name="workspace" data-title="Enter Workspace Name..." data-url="">Workspace B</h3>
+                    <div class="edit-box">
+                      <input type="text" placeholder="Enter Workspace Name" value="Workspace A">
+                    </div>
+                    <div class="edit-box-hidden">
+                      <a href="javascript:void(0)workspace-b-head" class="show-edit-box action" data-editable-for="workspace-b-head"><span class="icon-edit"></span></a>
+                    </div>
+                    <div class="edit-box-buttons">
+                      <a href="javascript:void(0)" class="action"><span class="icon-done"></span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="divider"></span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"><span class="icon-windows"></span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"><span class="icon-iphone"></span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+                <ul class="right horizontal workspace-actions">
+                  <li>
+                    <button class="tiny secondary radius round uppercase margin-0">Reset</button>
+                  </li>
+                  <li>
+                    <button class="tiny radius round uppercase bold margin-0">Save Changes</button>
+                  </li>
+                </ul>
+              </div>  
+            </div>
+            <div class="row">
+              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                <div class="user-preference-widget">
+                  <div class="up-widget-header-container">
+                    <h4 class="up-widget-header">Currency Blotter</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>Layout</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen46"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-47">Tabular</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen47" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-47" id="s2id_autogen47"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen47_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-47" id="s2id_autogen47_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-47">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="tabular">Tabular</option>
+                            <option value="tabular">Tabular</option>
+                            <option value="tabular">Tabular</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                          <label>Currency Group</label>
+                        </div>
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                          <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen48"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-49">G10</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen49" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-49" id="s2id_autogen49"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen49_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-49" id="s2id_autogen49_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-49">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                          <option value="g10">G10</option>
+                          <option value="g10">G10</option>
+                          <option value="g10">G10</option>
+                          <option value="g10">G10</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                        <label>Display fields</label>
+                      </div>
+                      <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                        <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen50"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-51">Bid, Ask</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen51" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-51" id="s2id_autogen51"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen51_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-51" id="s2id_autogen51_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-51">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                        <option value="bid-ask">Bid, Ask</option>
+                        <option value="bid-ask">Bid, Ask</option>
+                        <option value="bid-ask">Bid, Ask</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!-- .up-widget-primary-section ends -->
+              </div><!-- .up-widget-section ends -->
+            </div><!-- .user-preference-widget ends -->
+
+            <div class="user-preference-widget">
+              <div class="up-widget-header-container">
+                <h4 class="up-widget-header">Trade Blotter</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>Display fields</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen52"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-53">11 Fields</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen53" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-53" id="s2id_autogen53"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen53_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-53" id="s2id_autogen53_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-53">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="11-fields">11 Fields</option>
+                            <option value="11-fields">11 Fields</option>
+                            <option value="11-fields">11 Fields</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                          <label>Sort</label>
+                        </div>
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                          <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen54"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-55">6 Fields</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen55" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-55" id="s2id_autogen55"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen55_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-55" id="s2id_autogen55_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-55">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                          <option value="6-fields">6 Fields</option>
+                          <option value="6-fields">6 Fields</option>
+                          <option value="6-fields">6 Fields</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                        <label>Max Records</label>
+                      </div>
+                      <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                        <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen56"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-57">20</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen57" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-57" id="s2id_autogen57"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen57_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-57" id="s2id_autogen57_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-57">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                        <option value="20">20</option>
+                        <option value="20">20</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!-- .up-widget-primary-section ends -->
+              </div><!-- .up-widget-section ends -->
+            </div><!-- .user-preference-widget ends -->
+          </div><!-- column 1 ends -->
+          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+            <div class="user-preference-widget">
+              <div class="up-widget-header-container">
+                <h4 class="up-widget-header">Position Blotter</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>Layout</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen58"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-59">Tabular</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen59" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-59" id="s2id_autogen59"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen59_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-59" id="s2id_autogen59_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-59">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="tabular">Tabular</option>
+                            <option value="tabular">Tabular</option>
+                            <option value="tabular">Tabular</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                          <label>Currencies</label>
+                        </div>
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                          <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen60"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-61">6 CCY</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen61" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-61" id="s2id_autogen61"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen61_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-61" id="s2id_autogen61_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-61">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                          <option value="6-ccy">6 CCY</option>
+                          <option value="6-ccy">6 CCY</option>
+                          <option value="6-ccy">6 CCY</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                        <label>Display fields</label>
+                      </div>
+                      <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                        <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen62"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-63">Net USD Position, Net...</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen63" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-63" id="s2id_autogen63"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen63_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-63" id="s2id_autogen63_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-63">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                        <option value="net-usd-position">Net USD Position, Net...</option>
+                        <option value="net-usd-position">Net USD Position, Net...</option>
+                        <option value="net-usd-position">Net USD Position, Net...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!-- .up-widget-primary-section ends -->
+              </div><!-- .up-widget-section ends -->
+            </div><!-- .user-preference-widget ends -->
+
+            <div class="user-preference-widget">
+              <div class="up-widget-header-container">
+                <h4 class="up-widget-header">Quick EYD Pricer</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section enlarge">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>History</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen64"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-65">5</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen65" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-65" id="s2id_autogen65"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen65_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-65" id="s2id_autogen65_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-65">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div><!-- .up-widget-primary-section ends -->
+                  </div><!-- .up-widget-section ends -->
+                </div><!-- .user-preference-widget ends -->
+              </div>
+              <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+                <div class="user-preference-widget">
+                  <div class="up-widget-header-container">
+                    <h4 class="up-widget-header">Charts</h4>
+                      <!--<span class="icon-up-header-curve"></span>
+                      <span class="icon-up-header-low"></span>-->
+                    </div>
+                    <div class="up-widget-section">
+                      <div class="up-widget-primary-section">
+                        <div class="row">
+                          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                            <label>Chart Type</label>
+                          </div>
+                          <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                            <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen66"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-67">Bar</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen67" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-67" id="s2id_autogen67"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen67_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-67" id="s2id_autogen67_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-67">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                            <option value="bar">Bar</option>
+                            <option value="bar">Bar</option>
+                            <option value="bar">Bar</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                          <label>Range</label>
+                        </div>
+                        <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                          <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen68"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-69">1m</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen69" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-69" id="s2id_autogen69"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen69_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-69" id="s2id_autogen69_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-69">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                          <option value="1m">1m</option>
+                          <option value="1m">1m</option>
+                          <option value="1m">1m</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                        <label>Step</label>
+                      </div>
+                      <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                        <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen70"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-71">1w</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen71" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-71" id="s2id_autogen71"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen71_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-71" id="s2id_autogen71_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-71">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                        <option value="1w">1w</option>
+                        <option value="1w">1w</option>
+                        <option value="1w">1w</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                      <label>Data</label>
+                    </div>
+                    <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                      <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen72"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-73">Currency</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen73" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-73" id="s2id_autogen73"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen73_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-73" id="s2id_autogen73_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-73">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                      <option value="currency">Currency</option>
+                      <option value="currency">Currency</option>
+                      <option value="currency">Currency</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns">
+                    <label>Data Point</label>
+                  </div>
+                  <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns end">
+                    <div class="select2-container up-widget-form-el radius select2" id="s2id_autogen74"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-75">USD</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen75" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-75" id="s2id_autogen75"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen75_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-75" id="s2id_autogen75_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-75">   </ul></div></div><select class="up-widget-form-el radius select2 select2-offscreen" tabindex="-1" title="">
+                    <option value="usd">USD</option>
+                    <option value="usd">USD</option>
+                    <option value="usd">USD</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- .up-widget-primary-section ends -->
+          </div><!-- .up-widget-section ends -->
+        </div><!-- .user-preference-widget ends -->
+      </div></div></section></div></div></preferences-view>
+      <ireports-view data="dataModel.fxadmin"></ireports-view>
+      <div data="dataModel.fxadmin" items="dataModel.fxadmin.users" cols="dataModel.fxadmin.columnDefs" selected-items="dataModel.fxadmin.selectedItems" custom-options="dataModel.fxadmin.gridOptions" class="ng-isolate-scope">
+
+        <div id="fxAdminTabs"></div>
+        <div id="fx-messages"></div>
+
+      </div>
+
+<!-- ngInclude: undefined --><ng-include src="&#39;template/acp.html&#39;" class="ng-scope">      
+</ng-include>
+<!-- ngInclude: undefined --><ng-include src="&#39;template/sc.html&#39;" class="ng-scope">      
+</ng-include>
+<!-- ngInclude: undefined --><ng-include src="&#39;template/scb.html&#39;" class="ng-scope">      
+</ng-include>
+<!-- ngInclude: undefined --><ng-include src="&#39;template/stb.html&#39;" class="ng-scope">      
+</ng-include>
+</div>
+</div>
+</div>
+</div>
+
+<!-- content panel ends -->
+</div>
+<!-- main section ends -->
+
+<script type="text/javascript" src="./wells_files/jquery.js"></script>
+<script type="text/javascript" src="./wells_files/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./wells_files/jquery.plugin.min.js"></script>
+<script type="text/javascript" src="./wells_files/jquery.datepick.min.js"></script>
+<script type="text/javascript" src="./wells_files/foundation.min.js"></script>
+<script type="text/javascript" src="./wells_files/highstock.js"></script>
+<!-- <script type="text/javascript" src="./wells_files/select2.js"></script>
+<script type="text/javascript" src="./wells_files/angular.js"></script> -->
+<script type="text/javascript" src="./wells_files/ui-utils.js"></script>
+<script type="text/javascript" src="./wells_files/jquery.overlaps.js"></script>
+<script type="text/javascript" src="./wells_files/ng-grid.debug.js"></script>
+<script type="text/javascript" src="./wells_files/ng-grid-layout.js"></script>
+<script type="text/javascript" src="./wells_files/ng-context-menu.js"></script>
+<script type="text/javascript" src="./wells_files/sly.js"></script>
+<script type="text/javascript" src="./wells_files/my-script.js"></script>
+<script type="text/javascript" src="./wells_files/ui.dashboard.js"></script>
+<script type="text/javascript" src="./wells_files/ng.dashboard-cntrlr.js"></script>
+<!-- <script type="text/javascript" src="./wells_files/ng.dashboard-service.js"></script> -->    
+<script type="text/javascript" charset="utf-8" src="./wells_files/js/ext-all-dev.js"></script>
+<script src="scripts/messagebus.js"></script>
+<script src="scripts/httpstateprovider.js"></script>
+<script src="scripts/prototype.js"></script>
+<script type="text/javascript" src="./wells_files/js/BoxSelectBack.js"></script>
+<script type="text/javascript" src="./wells_files/js/allInOne.js"></script>
+
+
+
+
+<span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible">5 results are available, use up and down arrow keys to navigate.</span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front fxd-dialog ui-resizable" tabindex="-1" role="dialog" aria-describedby="acp" aria-labelledby="ui-id-6" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-6" class="ui-dialog-title">Add Currency Pair</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="acp" ui-jq="dialog" ui-options="{autoOpen:false, modal: true, closeOnEscape: true, draggable: false, title: &#39;Add Currency Pair&#39;, dialogClass: &#39;fxd-dialog&#39;, resizeable: false, width: &#39;31.250rem&#39;}" class="ng-scope ui-dialog-content ui-widget-content">
+<form class="ng-pristine ng-valid">
+  <div class="bcontent row">
+    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+      <h4>Add Currency Pair</h4>
+    </div>
+    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns">
+      <label class="bold">Enter Currency Pair
+        <br>
+        <input type="text" class="radius" ui-jq="select2" ui-options="{&quot;placeholder&quot;: &quot;Enter Currency Pair&quot;}" placeholder="Enter Currency Pair">
+      </label>
+    </div>
+    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+      <button class="tiny primary radius round uppercase bold right">Add</button>
+      <button class="tiny secondary radius round uppercase bold right">Cancel</button>
+    </div>
+  </div>
+</form>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front fxd-dialog ui-resizable" tabindex="-1" role="dialog" aria-describedby="settings-charts" aria-labelledby="ui-id-7" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-7" class="ui-dialog-title">Settings: Charts</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="settings-charts" ui-jq="dialog" ui-options="{autoOpen:false, modal: true, closeOnEscape: true, draggable: false, title: &#39;Settings: Charts&#39;, dialogClass: &#39;fxd-dialog&#39;, resizeable: false, width: &#39;35.250rem&#39;}" class="ng-scope ui-dialog-content ui-widget-content">
+<form class="ng-pristine ng-valid">
+  <div class="bcontent">
+    <div class="row">
+      <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns end"> 
+        <label class="bold">Chart Type
+          <br>
+          <div class="select2-container select2 radius" id="s2id_autogen82"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-83">Bar</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen83" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-83" id="s2id_autogen83"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen83_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-83" id="s2id_autogen83_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-83">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+          <option vlaue="bar" value="Bar">Bar</option>
+          <option vlaue="line" value="Line">Line</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns"> 
+      <label class="bold">Range</label>
+      <div class="row black">
+        <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns"> 
+          <div class="select2-container select2 radius" id="s2id_autogen84"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-85">1m</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen85" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-85" id="s2id_autogen85"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen85_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-85" id="s2id_autogen85_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-85">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+          <option vlaue="bar" value="1m">1m</option>
+          <option vlaue="line" value="10m">10m</option>
+        </select>
+      </div>
+      <div class="xxlarge-2 xlarge-2 large-2 medium-2 small-2 columns text-center"> 
+        <label class="ranger bold">to</label>
+      </div>
+      <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns"> 
+        <div class="select2-container select2 radius" id="s2id_autogen86"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-87">8m</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen87" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-87" id="s2id_autogen87"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen87_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-87" id="s2id_autogen87_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-87">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+        <option vlaue="bar" value="8m">8m</option>
+        <option vlaue="line" value="20m">20m</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end"> 
+  <label class="bold">Step</label>
+  <div class="row black">
+    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns"> 
+      <div class="select2-container select2 radius" id="s2id_autogen88"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-89">1w</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen89" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-89" id="s2id_autogen89"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen89_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-89" id="s2id_autogen89_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-89">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+      <option vlaue="bar" value="1w">1w</option>
+      <option vlaue="line" value="1d">1d</option>
+    </select>
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns"> 
+    <label class="bold">Data
+      <br>
+      <div class="select2-container select2 radius" id="s2id_autogen90"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-91">Currency</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen91" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-91" id="s2id_autogen91"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen91_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-91" id="s2id_autogen91_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-91">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+      <option vlaue="bar" value="Currency">Currency</option>
+      <option vlaue="line" value="Line">Line</option>
+    </select>
+  </label>
+</div>
+<div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns end"> 
+  <label class="bold">Data Point
+    <br>
+    <div class="select2-container select2 radius" id="s2id_autogen92"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-93">USD</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen93" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-93" id="s2id_autogen93"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen93_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-93" id="s2id_autogen93_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-93">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+    <option vlaue="bar" value="USD">USD</option>
+    <option vlaue="line" value="GBP">GBP</option>
+  </select>
+</label>
+</div>
+</div>
+<div class="row">
+  <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns"> 
+    <button class="tiny primary radius round uppercase right bold">Save</button>
+    <button class="tiny secondary radius round uppercase bold right">Cancel</button>
+  </div>
+</div>
+</div>
+</form>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front fxd-dialog ui-resizable" tabindex="-1" role="dialog" aria-describedby="settings-currency-blotter" aria-labelledby="ui-id-10" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-10" class="ui-dialog-title">Settings: Currency Blotter</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="settings-currency-blotter" ui-jq="dialog" ui-options="{autoOpen:false, modal: true, closeOnEscape: true, draggable: false, title: &#39;Settings: Currency Blotter&#39;, dialogClass: &#39;fxd-dialog&#39;, resizeable: false, width: &#39;44.375rem&#39;}" ng-controller="settingsCurrencyBlotter" class="ng-scope ui-dialog-content ui-widget-content">
+<div ui-jq="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+  <ul class="tabs ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+    <li class="tab-title ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="scb-general" aria-labelledby="ui-id-8" aria-selected="true" aria-expanded="true">
+      <a href="javascript:void(0)scb-general" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-8">General</a>
+    </li>
+    <li class="tab-title ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="scb-conditions" aria-labelledby="ui-id-9" aria-selected="false" aria-expanded="false">
+      <a href="javascript:void(0)scb-conditions" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-9">Conditions</a>
+    </li></ul>
+    <div class="tabs-content row bcontent">
+      <div id="scb-general" class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end content ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-8" role="tabpanel" aria-hidden="false" style="display: block;">
+        <div class="row">
+          <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns">
+            <span class="section-head">Select Layout</span>
+            <div class="row">
+              <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                <input type="radio" name="layout" class="layout-radio">
+                <label class="bold">Tabular</label>
+                <div class="col-3-layout layout-grid right">
+                  <div class="row collapse">
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bgred">
+                    </div>
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bggray">
+                    </div>
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end bglightgray">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                <input type="radio" name="layout" class="layout-radio">
+                <label class="bold">List</label>
+                <div class="row-3-layout layout-grid right">
+                  <div class="row collapse">
+                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns bgred">
+                    </div>
+                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns bggray">
+                    </div>
+                    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns bglightgray">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                <input type="radio" name="layout" class="layout-radio">
+                <label class="bold">Grid</label>
+                <div class="grid-3-3-layout layout-grid right">
+                  <div class="row collapse">
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bgred">
+                    </div>
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bggray">
+                    </div>
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end bglightgray">
+                    </div>
+                  </div>
+                  <div class="row collapse">
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bggray">
+                    </div>
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bglightgray">
+                    </div>
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end bggray">
+                    </div>
+                  </div>
+                  <div class="row collapse">
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bglightgray">
+                    </div>
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns bggray">
+                    </div>
+                    <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end bgred">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="xxlarge-7 xlarge-7 large-7 medium-7 small-7 columns end left-divider">
+            <span class="section-head">CCY Pair Group</span>
+            <div class="row">
+              <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+                <div class="select2-container select2 radius" id="s2id_autogen94"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-95">Currency Group Name</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen95" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-95" id="s2id_autogen95"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen95_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-95" id="s2id_autogen95_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-95">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+                <option value="">Currency Group Name</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns">
+              <div class="select2-container select2 radius margin-hack" id="s2id_autogen96"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-97">EUR USD</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen97" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-97" id="s2id_autogen97"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen97_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-97" id="s2id_autogen97_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-97">   </ul></div></div><select class="select2 radius margin-hack select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+              <option value="eur-usd">EUR USD</option>
+            </select>
+          </div>
+          <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+            <button class="icon-button radius">+</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+            <label class="bold">Already Added</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns radius ccy-pair-box">
+            <div>
+              <input type="checkbox" name="ccy-pair"><label>EUR/USD</label>
+            </div>
+            <div>
+              <input type="checkbox" name="ccy-pair"><label>GBP/USD</label>
+            </div>
+            <div>
+              <input type="checkbox" name="ccy-pair"><label>EUR/USD</label>
+            </div>
+            <div>
+              <input type="checkbox" name="ccy-pair"><label>GBP/USD</label>
+            </div>
+            <div>
+              <input type="checkbox" name="ccy-pair"><label>NZD/USD</label>
+            </div>
+            <div class="text-center">
+              <button class="disabled tiny primary round radius uppercase bold margin-0">Remove</button>
+            </div>
+          </div>
+          <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns end">
+            <div class="margin-9">
+              <div>
+                <button class="icon-button"><span>«</span></button>
+              </div>
+              <div>
+                <button class="icon-button"><span>‹</span></button>
+              </div>
+              <div class="button-vertical-spacing"></div>
+              <div>
+                <button class="icon-button"><span>›</span></button>
+              </div>
+              <div>
+                <button class="icon-button"><span>»</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns"> 
+        <button class="tiny primary radius round uppercase right bold">Save</button>
+        <button class="tiny secondary radius round uppercase bold right">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="scb-conditions" class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end content ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true" style="display: none;">
+    <div class="form-widget">
+      <div class="header">
+        <h4 class="heading ng-binding">My Conditions (3)</h4>
+      </div>
+      <div class="content">
+        <form class="ng-pristine ng-valid">
+          <ul class="list">
+            <!-- ngRepeat: condition in conditions --><li ng-repeat="condition in conditions" class="ng-scope">
+            <input type="radio" ng-model="$parent.conditionVal" ng-value="condition.conditionVal" name="conditionVal" class="ng-pristine ng-valid" value="1">
+            <label>When </label>
+            <span class="highlight currency-pair uppercase ng-binding">EUR/USD</span>
+            <span class="highlight option ng-binding">Buy</span>
+            is
+            <span class="highlight comparision ng-binding">Greater Than 0.1</span>
+            then
+            <span class="highlight action uppercase ng-binding">Prepare Booking</span>
+            <a class="close right ng-hide" href="javascript:void(0)" ng-show="$parent.conditionVal==1">
+              <span class="icon-closered">×</span>
+            </a>
+          </li><!-- end ngRepeat: condition in conditions --><li ng-repeat="condition in conditions" class="ng-scope">
+          <input type="radio" ng-model="$parent.conditionVal" ng-value="condition.conditionVal" name="conditionVal" class="ng-pristine ng-valid" value="2">
+          <label>When </label>
+          <span class="highlight currency-pair uppercase ng-binding">JPY/USD</span>
+          <span class="highlight option ng-binding">Buy</span>
+          is
+          <span class="highlight comparision ng-binding">Between 0.1 &amp; 0.2</span>
+          then
+          <span class="highlight action uppercase ng-binding">QUOTE</span>
+          <a class="close right ng-hide" href="javascript:void(0)" ng-show="$parent.conditionVal==2">
+            <span class="icon-closered">×</span>
+          </a>
+        </li><!-- end ngRepeat: condition in conditions --><li ng-repeat="condition in conditions" class="ng-scope">
+        <input type="radio" ng-model="$parent.conditionVal" ng-value="condition.conditionVal" name="conditionVal" class="ng-pristine ng-valid" value="3">
+        <label>When </label>
+        <span class="highlight currency-pair uppercase ng-binding">GBP/USD</span>
+        <span class="highlight option ng-binding">Sell</span>
+        is
+        <span class="highlight comparision ng-binding">Equals to 0.1</span>
+        then
+        <span class="highlight action uppercase ng-binding">NOTIFY</span>
+        <a class="close right ng-hide" href="javascript:void(0)" ng-show="$parent.conditionVal==3">
+          <span class="icon-closered">×</span>
+        </a>
+      </li><!-- end ngRepeat: condition in conditions -->
+    </ul>
+  </form>
+</div>
+</div>
+
+<div class="form-widget light">
+  <div class="header">
+    <h4 class="heading">Add New Conditions</h4>
+  </div>
+  <div class="content black">
+    <div class="row">
+      <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+        <label class="uppercase">When</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns">
+        <div class="select2-container select2 radius" id="s2id_autogen98"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-99">EUR/USD</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen99" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-99" id="s2id_autogen99"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen99_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-99" id="s2id_autogen99_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-99">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+        <option value="eur-usd">EUR/USD</option>
+        <option value="gbp-usd">GBP/USD</option>
+        <option value="jpy-usd">JPY/USD</option>
+      </select>
+    </div>
+    <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns end">
+      <div class="select2-container select2 radius" id="s2id_autogen100"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-101">Buy</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen101" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-101" id="s2id_autogen101"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen101_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-101" id="s2id_autogen101_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-101">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+      <option value="buy">Buy</option>
+      <option value="sell">Sell</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+    <label class="uppercase">Is</label>
+  </div>
+</div>
+<div class="row">
+  <div class="xxlarge-5 xlarge-5 large-5 medium-5 small-5 columns">
+    <div class="select2-container select2 radius" id="s2id_autogen102"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-103">Greater Than</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen103" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-103" id="s2id_autogen103"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen103_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-103" id="s2id_autogen103_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-103">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+    <option value="&gt;">Greater Than</option>
+    <option value="between">Between</option>
+    <option value="=">Equals</option>
+  </select>
+</div>
+<div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+  <input type="number" class="radius&quot;/">
+</div>
+</div>
+
+<div class="row">
+  <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+    <label class="uppercase">Then</label>
+  </div>
+</div>
+
+<div class="row">
+  <div class="xxlarge-8 xlarge-8 large-8 medium-8 small-8 columns">
+    <div class="select2-container select2 radius" id="s2id_autogen104"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-105">Prepare Booking</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen105" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-105" id="s2id_autogen105"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen105_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-105" id="s2id_autogen105_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-105">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+    <option value="prepare-booking">Prepare Booking</option>
+    <option value="quote">Quote</option>
+    <option value="notify">Notify</option>
+  </select>
+</div>
+<div class="xxlarge-4 xlarge-4 large-4 medium-4 small-4 columns end">
+  <button class="tiny button secondary round radius uppercase right">Add</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+    <button class="tiny primary button round radius uppercase bold right">Save</button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front fxd-dialog ui-resizable" tabindex="-1" role="dialog" aria-describedby="settings-trade-blotter" aria-labelledby="ui-id-11" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-11" class="ui-dialog-title">Settings: Trade Blotter</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="settings-trade-blotter" ui-jq="dialog" ui-options="{autoOpen:false, modal: true, closeOnEscape: true, draggable: false, title: &#39;Settings: Trade Blotter&#39;, dialogClass: &#39;fxd-dialog&#39;, resizeable: false, width: &#39;35.250rem&#39;}" class="ng-scope ui-dialog-content ui-widget-content">
+<form class="ng-pristine ng-valid">
+  <div class="bcontent">
+    <div class="row">
+      <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end"> 
+        <label class="bold">Fields to Display
+          <br>
+          <input type="text" class="text-normal margin-0 padding-0 select2 focus-expand radius" ui-jq="select2" placeholder="Fields to Display">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end"> 
+        <label class="bold">Max Rows to Display</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="xxlarge-3 xlarge-3 large-3 medium-3 small-3 columns end"> 
+        <label>
+          <div class="select2-container select2 radius" id="s2id_autogen106"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-107">10</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen107" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-107" id="s2id_autogen107"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen107_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-107" id="s2id_autogen107_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-107">   </ul></div></div><select class="select2 radius select2-offscreen" ui-jq="select2" tabindex="-1" title="">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns"> 
+      <button class="tiny primary radius round uppercase right bold">Save</button>
+      <button class="tiny secondary radius round uppercase bold right">Cancel</button>
+    </div>
+  </div>
+</div>
+</form>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div id="select2-drop-mask" class="select2-drop-mask" style="display: none;"></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="left: 1174.75px; width: 135px; top: 130px; bottom: auto; display: none;">   <div class="select2-search">       <label for="s2id_autogen4_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-4" id="s2id_autogen4_search" placeholder="" aria-activedescendant="select2-result-label-110">   </div>   <ul class="select2-results" role="listbox" id="select2-results-4"></ul></div></body></html>

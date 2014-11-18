@@ -1,0 +1,258 @@
+
+<div ng-controller="fxAdminController">
+<div ui-jq="tabs" class="fxadmin-container" style="display:none;">
+  <ul class="tabs">
+    <li class="tab-title">
+      <a href="#manage-user-priviliges">
+        Manage User Privileges
+      </a>
+    </li>
+    <li class="tab-title">
+      <a href="#workspaces-template">
+        Workspaces Templates
+      </a>
+    </li>
+  </ul>
+
+
+
+  <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end tabs-content">
+
+    <div id="manage-user-priviliges">
+      <div class="row">
+        <div class="xxlarge-6 xlarge-6 large-6 medium-12 small-12 columns end">
+          <div class="row workspace-header keep-pad collapse">
+            <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end border-bottom">
+              <h3 class="uppercase workspace-name">Search Users</h3>
+            </div>
+          </div>
+          <div class="row keep-pad">
+            <div class="xxlarge-3 xlarge-3 large-3 medium-4 small-6 columns">
+              <label>Last Name
+                <br/>
+                <input type="text" placeholder="Last Name" ng-model="data.user.lastName" class="radius"/>
+              </label>
+            </div>
+            <div class="xxlarge-3 xlarge-3 large-3 medium-4 small-6 columns">
+              <label>First Name
+                <br/>
+                <input type="text" placeholder="First Name" ng-model="data.user.firstName" class="radius"/>
+              </label>
+            </div>
+            <div class="xxlarge-4 xlarge-4 large-4 medium-4 small-6 columns">
+              <label>Select by Role
+                <br/>
+                <select class="select2 radius" ui-jq="select2" ui-options="{'placeholder' :'Select by Role'}" ng-model="data.user.role" ng-options="item.roleVal as item.role for item in data.roles">
+                  <option value="">Select by Role</option>
+                </select>
+              </label>
+            </div>
+            <div class="xxlarge-2 xlarge-2 large-2 medium-4 small-6 columns collapse end">
+              <button class="tiny secondary round radius uppercase margin-t-20">Search</button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end">
+              <div class="trendy-header">
+                <h4 class="heading">All Users</h4>
+              </div>
+              <div class="grid-container">
+                <div class="grid-style" ng-grid="options"></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- search user container ends -->
+        <div class="xxlarge-6 xlarge-6 large-6 medium-12 small-12 columns end left-divider">
+          <div class="row workspace-header keep-pad collapse">
+            <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns end border-bottom">
+              <h3 class="uppercase workspace-name">Manage Roles</h3>
+            </div>
+          </div>
+          <div class="row workspace-header keep-pad collapse border-bottom">
+            <div class="xxlarge-2 xlarge-2 large-2 medium-4 small-4 column">
+              <a class="circular-view profile-pic-container margin-t-20" href="#">
+                <img src="{{data.selectedUser.img}}">
+              </a>
+            </div>
+            <div class="xxlarge-10 xlarge-10 large-10 medium-8 small-8 column">
+              <p class="name">{{data.selectedUser.name}}</p>
+              <label>Assign Name
+                <br/>
+                <input type="text" class="select2" ui-jq="select2" ui-options="{placeholder: 'Click to Select', tokenSeperators: [','], allowClear: true, multiple: true }" ng-model="data.selectedUser.newRole.id"/>
+            </div>
+          </div>
+          <div class="roles-container">
+            <div class="head">
+              <h4 class="heading uppercase">New Privileges ({{data.selectedUser.newRoles.length}})</h4>
+            </div>
+            <ul class="large-block-grid-3 medium-block-grid-3 small-block-grid-2 roles-content">
+              <li class="role" ng-repeat="role in data.selectedUser.newRoles">
+                <div class="content">
+                  <span class="acronym bold">{{role.code}}</span>
+                  <label>{{role.role}}</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="row keep-pad border-bottom">
+            <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns margin-t-20 collapse"> 
+              <button class="tiny primary radius round uppercase right bold">Save</button>
+              <button class="tiny secondary radius round uppercase bold right">Cancel</button>
+            </div>
+          </div>
+          <div class="roles-container">
+            <div class="head">
+              <h4 class="heading uppercase">Current Privileges ({{data.selectedUser.currentRoles.length}})</h4>
+            </div>
+            <ul class="large-block-grid-3 medium-block-grid-3 small-block-grid-2 roles-content">
+              <li class="role" ng-repeat="role in data.selectedUser.currentRoles">
+                <div class="content">
+                  <span class="acronym bold">{{role.code}}</span>
+                  <label>{{role.role}}</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div><!-- manage role container ends -->
+      </div><!--.row ends -->
+    </div>
+
+    <div id="workspaces-template">
+      <div class="row">
+        <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns end"> 
+          <button class="tiny secondary round radius uppercase">Add Workspace</button>
+        </div>
+      </div>
+      <div ui-jq="tabs" class="ui-tabs-vertical ui-helper-clearfix row collapse">
+        <div class="xxlarge-2 xlarge-2 large-3 medium-3 small-4 columns">
+          <ul class="tabs">
+            <li class="tab-title">
+              <a href="#wt-workspace-eyd">
+                Workspace - EYD
+              </a>
+            </li>
+            <li class="tab-title">
+              <a href="#wt-workspace-buffet">
+                Workspace - Buffet
+              </a>
+            </li>
+            <li class="tab-title">
+              <a href="#wt-workspace-prm">
+                Workspace - PRM
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="xxlarge-10 xlarge-10 large-9 medium-9 small-8 columns end">
+          <div id="wt-workspace-eyd">
+            <div class="row">
+              <div class="xxlarge-6 xlarge-6 large-6 medium-8 small-12 columns end wt-workspace-widget">
+                <div class="trendy-header">
+                  <h4 class="heading small">
+                    EYD Quote
+                    <a href="#" class="icon-closegray">&times;</a>
+                  </h4>
+                </div>
+                <div class="select-container row collapse">
+                  <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns">
+                    <div class="black-gradient">
+                      <div class="heading">{{ filtered = (data.eydQuoteWidget | filter: {'isSelected': true}); filtered.length; }} Widgets Selected
+                        <a class="action right" href="#">Remove all</a>
+                      </div>
+                    </div>
+                    <div class="content radius">
+                      <ul class="vertical margin-0">
+                        <li ng-repeat="widget in filtered = (data.eydQuoteWidget | filter: {'isSelected': true} | orderBy: name)">
+                        {{widget.name}}
+                        <a href="#" class="icon-minus right" ng-click="widget.isSelected = false">&minus;</a>
+                        </li>
+                      </ul>  
+                    </div>
+                  </div>
+                  <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns end left-divider-transparent">
+                    <div class="black-gradient">
+                      <div class="heading">
+                        <input type="text" ng-model="data.eydQuoteWidgetSearch" placeholder="Search" class="search-widget black radius"/>
+                        <a class="action right" href="#">Add all</a>
+                      </div>
+                    </div>
+                    <div class="content radius">
+                      <ul class="vertical margin-0">
+                        <li ng-repeat="widget in filtered = (data.eydQuoteWidget | filter: {'isSelected': false} | filter: data.eydQuoteWidgetSearch | orderBy: name)">
+                        {{widget.name}}
+                        <a href="#" class="icon-minus right" ng-click="widget.isSelected = true">&plus;</a>
+                        </li>
+                      </ul>  
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="xxlarge-6 xlarge-6 large-6 medium-8 small-12 columns end wt-workspace-widget">
+                <div class="trendy-header">
+                  <h4 class="heading small">
+                    EYD Monitor
+                    <a href="#" class="icon-closegray">&times;</a>
+                  </h4>
+                </div>
+                <div class="select-container row collapse">
+                  <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns">
+                    <div class="black-gradient">
+                      <div class="heading">{{ filtered = (data.eydQuoteWidget | filter: {'isSelected': true}); filtered.length; }} Widgets Selected
+                        <a class="action right" href="#">Remove all</a>
+                      </div>
+                    </div>
+                    <div class="content radius">
+                      <ul class="vertical margin-0">
+                        <li ng-repeat="widget in filtered = (data.eydQuoteWidget | filter: {'isSelected': true} | orderBy: name)">
+                        {{widget.name}}
+                        <a href="#" class="icon-minus right" ng-click="widget.isSelected = false">&minus;</a>
+                        </li>
+                      </ul>  
+                    </div>
+                  </div>
+                  <div class="xxlarge-6 xlarge-6 large-6 medium-6 small-6 columns end left-divider-transparent">
+                    <div class="black-gradient">
+                      <div class="heading">
+                        <input type="text" ng-model="data.eydQuoteWidgetSearch" placeholder="Search" class="search-widget black radius"/>
+                        <a class="action right" href="#">Add all</a>
+                      </div>
+                    </div>
+                    <div class="content radius">
+                      <ul class="vertical margin-0">
+                        <li ng-repeat="widget in filtered = (data.eydQuoteWidget | filter: {'isSelected': false} | filter: data.eydQuoteWidgetSearch | orderBy: name)">
+                        {{widget.name}}
+                        <a href="#" class="icon-minus right" ng-click="widget.isSelected = true">&plus;</a>
+                        </li>
+                      </ul>  
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="xxlarge-12 xlarge-12 large-12 medium-12 small-12 columns margin-t-20"> 
+                <button class="tiny primary radius round uppercase right bold margin-b-0">Save</button>
+                <button class="tiny secondary radius round uppercase bold right margin-b-0">Add Window</button>
+              </div>
+            </div>
+
+          </div>
+          <div id="wt-workspace-buffet">
+            Workspace Buffet
+          </div>
+          <div id="wt-workspace-prm">
+            Workspace PRM
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

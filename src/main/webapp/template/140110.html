@@ -1,0 +1,49 @@
+
+<div draggable class="widget xxlarge-3 xlarge-5 large-5 medium-6 small-12 columns portlet" ng-init="minimize=false; show=true;" ng-show="show">
+  <div class="container">
+    <div class="portlet-header" context-menu data-target="cb-context-menu">
+      <ul class="right widget-menu">
+        <li>
+          <a href="#" data-dropdown="cb-settings-drop" aria-controls="cb-settings-drop" data-options="align:left" aria-expanded="false">
+            <span class="icon-settings"></span>
+          </a>
+          <ul id="cb-settings-drop" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+            <li><a href="#" ui-event="{click: '$parent.openDialog($event)'}" data-options='{"id": "acp"}'>Add Currency Pair</a></li>
+            <li><a href="#" ui-event="{click: '$parent.openDialog($event)'}" data-options='{"id": "settings-currency-blotter"}'>Settings</a></li>
+            <li><a href="#" ng-click="minimize=!minimize">Minimize</a></li>
+            <li><a href="#">Fullscreen</a></li>
+            <li><a href="#" ng-click="show=false">Close</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ng-include src="'template/cbcontext-menu.html'"></ng-include>
+      <h3>CURRENCY BLOTTER (G-10)</h3>
+    </div><!-- .header ends -->
+    <div class="section" ng-hide="minimize">
+      <table class="responsive currency-blotter" role="grid">
+        <thead>
+          <tr>
+            <th>CCY Pair</th>
+            <th>Bid</th>
+            <th>Ask</th>
+            <th>Market Direction</th>
+            <th width="40"></th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="ccy in data | orderBy:'baseCurrency'">
+          <tr class="{{ ccy.upDown?'green':'red' }}" ng-init="removeRow=false" ng-hide="removeRow">
+            <td class="dark">{{(ccy.baseCurrency+"/"+ccy.counterCurrency) | uppercase}}</td>
+            <!-- we are expecting to get only 4 decimal places, when we do, we take the first 2 decimal places using num.toFixed(2), then access the last 2 decimal places using 
+            num-num.toFixed(2) // this will return 0.00xx where xx are the last 2 decimal places
+            multiplying these with 10,000 will return a simple 2 digit number.
+             -->
+            <td><small>{{ccy.bid | number:4}}</small></td>
+            <td><small>{{ccy.ask | number:4}}</small></td>
+            <td class="dark"><span class="{{ccy.upDown?'icon-uptrend':'icon-downtrend'}}"></span></td>
+            <td class="light"><a href="#" ng-click="removeRow=true">&times;</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- section ends -->
+  </div><!-- .container ends -->
+</div><!-- widget ends -->

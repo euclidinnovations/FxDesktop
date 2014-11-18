@@ -1,0 +1,32 @@
+
+<!-- charts widget starts -->
+<div draggable class="widget xxlarge-2 xlarge-3 large-3 medium-6 small-12 columns portlet" ng-init="minimize=false; show=true;" ng-show="show">
+	<div class="container">
+	  <div class="portlet-header">
+	    <ul class="right widget-menu">
+	      <li>
+	        <a href="#" data-dropdown="chart-settings-drop" aria-controls="chart-settings-drop" data-options="align:left" aria-expanded="false">
+	          <span class="icon-settings"></span>
+	        </a>
+	        <ul id="chart-settings-drop" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+            <li><a href="#" ui-event="{click: 'openDialog($event)'}" data-options='{"id": "settings-charts"}'>Settings</a></li>
+            <li><a href="#" ng-click="minimize=!minimize">Minimize</a></li>
+	          <li><a href="#">Fullscreen</a></li>
+            <li><a href="#" ng-click="show=false">Close</a></li>
+	        </ul>
+	      </li>
+	    </ul>
+	    <h3>CHARTS</h3>
+	  </div><!-- .header ends -->
+	  <div class="section" ng-hide="minimize">
+	    <h4 class="charts-subheader uppercase">
+	      <span class="icon-stats"></span>
+	      USD
+	      <small>rates last 6 months</small>
+	    </h4>
+	    <div id="chartContainer"></div>
+	  </div><!--section ends -->
+	  
+	</div> 
+</div>
+<!-- charts widget ends -->

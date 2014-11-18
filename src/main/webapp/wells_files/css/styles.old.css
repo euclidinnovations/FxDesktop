@@ -1,0 +1,718 @@
+#webLogo span{ font-size: 24px; padding-left: 7px; position: relative; top: 2px}
+#hLines{background:none; padding: 0px; border: none !important;}
+#hLines .menu-link{line-height: 0px; padding-top: 40px;}
+#hlines .x-btn-default-small .x-btn-inner{padding: 0px;}
+#hLines .hLines-btnEl {padding-top: 1.875rem; color: #c2c2c2; font-size: 1.8rem; 
+  line-height: 1.25rem; }
+
+#searchDrop #searchOptId-bodyEl{padding: 0px;}
+#searchDrop #searchOptId-inputCell{padding: 0px; display: block; height: 0px;}
+#searchDrop #searchOptId-inputEl {  padding: 17px 17px 18px 17px; 
+  border-radius: 7px 0px 0px 7px; width: 136px !important;}
+#searchDrop table, #multiSearch table{background: none;}
+.padtop11{padding-top: 11px !important;}
+button.postfix.half-round.black{margin-top: 9px;}
+#searchOptId-triggerWrap input{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), color-stop(0.33, #efefef), color-stop(0.66, #e3e3e3), color-stop(1, #d7d7d7));
+background-image: -o-linear-gradient(bottom, #f9f9f9 0%, #efefef 33%, #e3e3e3 66%, #d7d7d7 100%);
+background-image: -moz-linear-gradient(bottom, #f9f9f9 0%, #efefef 33%, #e3e3e3 66%, #d7d7d7 100%);
+background-image: -webkit-linear-gradient(bottom, #f9f9f9 0%, #efefef 33%, #e3e3e3 66%, #d7d7d7 100%);
+background-image: -ms-linear-gradient(bottom, #f9f9f9 0%, #efefef 33%, #e3e3e3 66%, #d7d7d7 100%);
+background-image: linear-gradient(to bottom, #f9f9f9 0%, #efefef 33%, #e3e3e3 66%, #d7d7d7 100%);
+filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#f9f9f9', EndColorStr='#d7d7d7');
+border: 1px solid #c9c9c9;}
+
+#searchDrop  .x-trigger-cell {display: block; left: 104px; position: relative; top: 0px; background: none; }
+#searchDrop  .x-trigger-cell div.x-form-trigger{background-color: none; border: 0px; background-image: url("../images/down_arrow.png");}
+
+.x-boundlist li{background-color: #0066cc; color: #FFF; padding: 10px; border: none;}
+.x-boundlist li:hover{background-color: #FFF; color: #0066cc; font-weight: bold;}
+
+#searchBox #searchBox-bodyEl, #searchBox #searchBox-inputCell{padding: 0px; display: block;}
+#searchBox .x-trigger-cell{display: none;}
+
+#searchDrop .x-form-trigger-wrap-focus .x-form-trigger{background-position:center;}
+
+#searchBox-inputEl{ padding: 13px; color: #777777; background-image: none; height:35px;}
+#searchBox-inputCell ul{padding: 0px;}
+#emailSuggest #searchBox{width: 420px !important;}
+
+#searchOptId .x-trigger-cell div{right: 135px; top: 9px; position: relative; 
+  background-image: url("../images/down_arrow.png");}
+#searchBox-itemList .x-boxselect-item-text {line-height: 0px; padding-bottom: 14px; height: 0px; padding-top: 14px;}
+#searchBox-itemList .x-tab-close-btn{top:13px; top: 6px; right: 3px; width: 13px;}
+#searchBox-itemList .x-boxselect-item {margin: 3px 2px 1px 2px; background-color: #ECECEC; border: 1px solid #C4C4C4;}
+.x-css-shadow{}
+.icon_notification{position: relative; top:3px; right: 29px;}
+#searchBox-itemList .x-tab-close-btn{background-image: url("../images/tips-close.png");}
+
+#userDrop{position: absolute; padding: 13px; width: 268px; background: #FFF; z-index: 1; box-shadow: 2px 2px 4px -1px; display: none;}
+#dropInfoID{background: none;}
+.user-container {/*background: linear-gradient(to bottom, #ffffff 0%, #C3C3C3 50%, #ededed 100%);*/}
+span.icon-how-many-new{top: -1.668rem; right: 1.062rem;}
+#alerts_list{clip: auto; width: auto; display: none;}
+.side-nav > li > a{font-size: 0.888em;}
+
+.martop3{margin-top: 3px;}
+
+#fxwidget .frame{width: 1030px; height: 82px;}
+#fxwidget .frame .slidee li{height: 53px;}
+#fxwidget .x-panel, #fxwidget .x-plain , #fxwidget .x-panel-body{overflow: visible;}
+#fxwidget .x-panel-default, #fxwidget .x-panel-body-default{background-color: transparent; border: none;}
+#fxwidget .x-panel-default{}
+#fxwidget .x-toolbar-default { background: none; border: none; height: 25px; }
+#fxwidget .x-btn, #fxwidget .x-box-inner {height: 25px !important;}
+
+#fxwidget #prevID, #fxwidget #nextID{height: 25px; }
+#fxwidget #prevID-btnEl, #fxwidget #nextID-btnEl{height: 25px !important;}
+#prevWidgets .x-box-item {position: inherit !important;}
+#prevWidgets #prevID, #nextWidgets #nextID{top:25px;}
+#fxwidget #fxwidget-body{top:0px !important}
+#fxwidget #prevID-btnInnerEl, #fxwidget #nextID { background-image: url("../img/icons-dashboard.png"); display: inline-block; }
+#nextID-btnEl, #prevID-btnEl { background-image: url("../../img/icons-dashboard.png"); background-position: -149px -257px; width: 11px; height: 17px !important; }
+
+#prevID{right: 2px;}
+#nextID{right: 3px;}
+#nextID-btnEl { width: 11px;   height: 17px; -webkit-transform: rotate(180deg);   -moz-transform: rotate(180deg);   transform: rotate(180deg); } 
+#prevID-btnEl:hover{background-color: none;}
+#prevID-btnEl #prevID-btnInnerEl{color: transparent !important;}
+
+#fxwidget .x-btn-default-small:hover{background-color: transparent !important;}
+#prevID, #nextID{border: none !important; background: none !important; }
+
+#widgetOnOff{background: none; border: none;}
+#widgetOnOff .x-btn em a{display: inline;}
+#widgetOnOff #widgetOnOff-btnInnerEl{padding-top: 4px !important;}
+
+#cptq_blotter{width: 100%; float: left;}
+
+/*--------------------------------CURRENCY BLOTTER----------------------------------------------------*/
+#currency_blotter{width: 42%;}
+#CurrencyBlotter{background-color: #FFF !important; border:none !important; padding: 5px;}
+#CurrencyBlotter_header{ border:none !important;}
+#CurrencyBlotter .x-docked-top{background-color: #FFF;}
+#CurrencyBlotter{border: 3px solid #d6d6d6; border-radius: 5px; -webkit-box-shadow: -1px 6px 20px -6px rgba(195,195,195,1);
+-moz-box-shadow: -1px 6px 20px -6px rgba(195,195,195,1);
+box-shadow: -1px 6px 20px -6px rgba(195,195,195,1);}
+#CurrencyBlotter .x-panel-header{background-color: #FFF; border: 1px solid #FFF; /*top: 44px !important;*/}
+#CurrencyBlotter .x-title-text span{color: red;}
+.x-panel-header-title-default > .x-title-text-default:after{color:transparent;}
+#CurrencyBlotter span.cb_head{}
+#CurrencyBlotter .x-column-header-inner{
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4f4f4f), color-stop(0.33, #454545), color-stop(0.66, #343434), color-stop(1, #292929));
+  background-image: -o-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -moz-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -webkit-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -ms-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: linear-gradient(to bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4f4f4f', EndColorStr='#292929'); text-align: center; line-height: 35px;}
+
+#CurrencyBlotter .x-column-header-inner.x-column-header-over{background-color: #333 !important; text-align: center; line-height: 35px; background-image: none;}
+#CurrencyBlotter .x-grid-with-row-lines .x-grid-item{height: 40px;  vertical-align: middle;}
+#CurrencyBlotter .x-grid-with-row-lines .x-grid-td {vertical-align: middle;border-right: 1px solid #FFF;}.
+#CurrencyBlotter .x-toolbar-default{border: 1px solid #FFF;}
+#CurrencyBlotter .x-toolbar-default{border: none; left: 295px !important;  top: 6px !important; background: transparent !important; width: 150px !important;}
+.green-row, .green-row td{
+  color: #FFF  !important;	
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #45a216), color-stop(0.33, #3e9b10), color-stop(0.66, #369308), color-stop(1, #2f8c01)) !important;
+  background-image: -o-linear-gradient(bottom, #45a216 0%, #3e9b10 33%, #369308 66%, #2f8c01 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #45a216 0%, #3e9b10 33%, #369308 66%, #2f8c01 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #45a216 0%, #3e9b10 33%, #369308 66%, #2f8c01 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #45a216 0%, #3e9b10 33%, #369308 66%, #2f8c01 100%) !important;
+  background-image: linear-gradient(to bottom, #45a216 0%, #3e9b10 33%, #369308 66%, #2f8c01 100%) !important;
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#45a216', EndColorStr='#2f8c01') !important;
+}
+#CurrencyBlotter #CurrencyBlotter-body .x-grid-table tr.green-row td:nth-child(1), 
+ #CurrencyBlotter #CurrencyBlotter-body .x-grid-table tr.green-row td.x-grid-cell-first,
+ #CurrencyBlotter #CurrencyBlotter-body .x-grid-table tr.green-row td:nth-child(4), 
+ #CurrencyBlotter #CurrencyBlotter-body .x-grid-table tr.green-row td.x-grid-cell-last{
+  font-size: 0.875em;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3d9014), color-stop(0.33, #378a0d), color-stop(0.66, #2f8206), color-stop(1, #2a7d01)) !important;
+  background-image: -o-linear-gradient(bottom, #3d9014 0%, #378a0d 33%, #2f8206 66%, #2a7d01 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #3d9014 0%, #378a0d 33%, #2f8206 66%, #2a7d01 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #3d9014 0%, #378a0d 33%, #2f8206 66%, #2a7d01 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #3d9014 0%, #378a0d 33%, #2f8206 66%, #2a7d01 100%) !important;
+  background-image: linear-gradient(to bottom, #3d9014 0%, #378a0d 33%, #2f8206 66%, #2a7d01 100%) !important;
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#3d9014', EndColorStr='#2a7d01') !important;
+}
+.red-row, .red-row td{
+  color: #FFF  !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fe4545), color-stop(0.33, #f73d3d), color-stop(0.66, #ef3535), color-stop(1, #e92f2f)) !important;
+  background-image: -o-linear-gradient(bottom, #fe4545 0%, #f73d3d 33%, #ef3535 66%, #e92f2f 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #fe4545 0%, #f73d3d 33%, #ef3535 66%, #e92f2f 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #fe4545 0%, #f73d3d 33%, #ef3535 66%, #e92f2f 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #fe4545 0%, #f73d3d 33%, #ef3535 66%, #e92f2f 100%) !important;
+  background-image: linear-gradient(to bottom, #fe4545 0%, #f73d3d 33%, #ef3535 66%, #e92f2f 100%) !important;
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#fe4545', EndColorStr='#e92f2f') !important;
+}
+#CurrencyBlotter #CurrencyBlotter-body .x-grid-table tr.red-row td:nth-child(1), 
+ #CurrencyBlotter #CurrencyBlotter-body .x-grid-table tr.red-row td.x-grid-cell-first,
+#CurrencyBlotter #CurrencyBlotter-body .x-grid-table tr.red-row td:nth-child(4), 
+ #CurrencyBlotter #CurrencyBlotter-body .x-grid-table tr.red-row td.x-grid-cell-last{
+  font-size: 0.875em;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e23d3d), color-stop(0.33, #dd3737), color-stop(0.66, #d52f2f), color-stop(1, #cf2a2a)) !important;
+  background-image: -o-linear-gradient(bottom, #e23d3d 0%, #dd3737 33%, #d52f2f 66%, #cf2a2a 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #e23d3d 0%, #dd3737 33%, #d52f2f 66%, #cf2a2a 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #e23d3d 0%, #dd3737 33%, #d52f2f 66%, #cf2a2a 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #e23d3d 0%, #dd3737 33%, #d52f2f 66%, #cf2a2a 100%) !important;
+  background-image: linear-gradient(to bottom, #e23d3d 0%, #dd3737 33%, #d52f2f 66%, #cf2a2a 100%) !important;
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#e23d3d', EndColorStr='#cf2a2a') !important;
+}
+td.x-grid-cell-first div{font-size: 14px;}
+.removethis .x-btn-inner-default-toolbar-small,.addnew .x-btn-inner-default-toolbar-small{padding: 5px; border-radius: 5px; background-color: #F4F4F4; font-weight: normal;}
+#CurrencyBlotter .x-btn-default-toolbar-small{background-image: none; border:none; }
+#CurrencyBlotter.x-grid-cell-inner{color:#FFF; text-align: center !important;}
+#CurrencyBlotter .x-grid-header-ct{}
+#CurrencyBlotter .x-panel-header{background: #FFF;}
+#CurrencyBlotter .x-grid-header-ct{top:37px !important;}
+#CurrencyBlotter #CurrencyBlotter-body{top:73px !important;}
+#CurrencyBlotter .x-panel-header-default .x-tool-img{background-color: #c1c1c1;}
+#CurrencyBlotter .updownimg{text-align: center;}
+#CurrencyBlotter .x-grid-row .x-grid-cell{font-size: 14px; vertical-align: middle;}
+#CurrencyBlotter #button-1024-btnEl{border: 1px solid #33CC00; border-radius: 5px; background-color: #33CC00; color:#FFF;}
+#CurrencyBlotter #button-1025-btnEl{border: 1px solid #FF3333; border-radius: 5px; background-color: #FF3333; color:#FFF;}
+#CurrencyBlotter .x-panel-header-text-default{color: #FF6666;}
+#CurrencyBlotter .x-tool{top:-2px !important;}
+#CurrencyBlotter .x-btn{/*top:2px !important;*/}
+#CurrencyBlotter .x-grid-cell-last{float: none;}
+#CurrencyBlotter .x-column-header-over{background-color: #000 !important;}
+#CurrencyBlotter .cb{color:#FF6666; font-size: 14px; top: 0px; position: relative;
+			left: 0px;}
+#CurrencyBlotter .x-panel-header-horizontal .x-tool, #CurrencyBlotter .x-window-header-horizontal .x-tool{top:0px !important;}
+#CurrencyBlotter .x-btn-default-toolbar-small-noicon .x-btn-inner{line-height: 14px; color:#FFF;}
+
+#cur_blot_win{background-color: #FFF !important; border:none !important; padding: 5px; border-radius: 8px;}
+#cur_blot_win_header{ border:none !important;}
+#cur_blot_win .x-docked-top{background-color: #FFF;}
+#cur_blot_win .x-window-body-default{border: none; background-image: none; background-color: #FFF;}
+#cur_blot_win .x-window-header-text-default{color: #FF6666; font-size: 14px; top: 0px; position: relative; 
+	left: 5px;}
+#cur_blot_win .x-window-body-default{top:0px !important;}
+#cur_blot_win .x-tool{top:1px !important;}
+
+#CurrencyBlotter #CurrencyBlotter-body table.x-grid-table tr td{border: none !important;}
+#CurrencyBlotter #CurrencyBlotter-body table.x-grid-table tr td div{text-align: center !important; font-size: 15px;}
+#CurrencyBlotter .x-box-item{border:none;}
+/*--------------------------------CURRENCY BLOTTER----------------------------------------------------*/
+
+
+/*--------------------------------POSITION BLOTTER----------------------------------------------------*/
+#PositionBlotter{background-color: #FFF !important; border:none !important; padding: 5px;}
+#PositionBlotter_header{ border:none !important;}
+#PositionBlotter .x-docked-top{background-color: #FFF;}
+#PositionBlotter{border: 3px solid #d6d6d6; border-radius: 5px; -webkit-box-shadow: -1px 6px 20px -6px rgba(195,195,195,1);
+-moz-box-shadow: -1px 6px 20px -6px rgba(195,195,195,1);
+box-shadow: -1px 6px 20px -6px rgba(195,195,195,1);}
+#PositionBlotter .cb{color:#FF6666; font-size: 14px; top: 0px; position: relative; left: 0px;}
+#PositionBlotter .x-panel-header{background-color: #FFF;}
+#PositionBlotter .x-title-text span{color: #FF6666;}
+.x-panel-header-title-default > .x-title-text-default:after{color:transparent;}
+#PositionBlotter span.cb_head{}
+#PositionBlotter .x-column-header-inner{
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4f4f4f), color-stop(0.33, #454545), color-stop(0.66, #343434), color-stop(1, #292929));
+  background-image: -o-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -moz-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -webkit-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -ms-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: linear-gradient(to bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4f4f4f', EndColorStr='#292929'); text-align: center; line-height: 35px;}
+#PositionBlotter .x-column-header-inner.x-column-header-over{background-color: #333 !important; text-align: center; line-height: 35px; background-image: none;}
+#PositionBlotter .x-grid-with-row-lines .x-grid-item{height: 40px;  vertical-align: middle;}
+#PositionBlotter .x-grid-with-row-lines .x-grid-td {vertical-align: middle; border-right: 1px solid #FFF; border-bottom: 1px solid #FFF;}
+#PositionBlotter .x-toolbar-default{}
+#PositionBlotter .x-toolbar-default{border: none; left: 295px !important;  top: -4px !important; background: transparent !important; width: 150px !important;}
+.green-row{background-color: #33CC00;}
+.red-row{background-color: #FF3333;}
+.green-val{color: #33CC00;}
+.red-val{color: #FF3333;}
+.removethis .x-btn-inner-default-toolbar-small,.addnew .x-btn-inner-default-toolbar-small{padding: 5px; border-radius: 5px; background-color: #F4F4F4; font-weight: normal;}
+#PositionBlotter .x-btn-default-toolbar-small{background-image: none; border:none; }
+#PositionBlotter .x-grid-cell-inner{color:#000; text-align: center !important;}
+#PositionBlotter .x-grid-header-ct{}
+#PositionBlotter .x-panel-header{background: #FFF;}
+#PositionBlotter .x-grid-header-ct{top:37px !important;}
+#PositionBlotter #PositionBlotter-body{top:74px !important; border: none;}
+#PositionBlotter .x-panel-header-default .x-tool-img{background-color: #c1c1c1;}
+.bold-val{font-weight: bold; color: #999;}
+#PositionBlotter .x-grid-with-row-lines .x-grid-item{background-color: #ebebeb;}
+.green-arrow{/*background-image: url(../images/arrow-up-green.png); */float: right;}
+.red-arrow{/*background-image: url(../images/arrow-down-red.png);*/ float: right;}
+#PositionBlotter .x-tool{top:-2px !important;}
+#PositionBlotter .x-grid-cell-last{float: none;}
+#PositionBlotter .x-panel-header-horizontal .x-tool, #PositionBlotter .x-window-header-horizontal .x-tool{top:0px !important;}
+#PositionBlotter .x-grid-row-alt .x-grid-cell, #PositionBlotter .x-grid-row-alt .x-grid-rowwrap-div{vertical-align: middle;}
+
+#pos_blot_win{background-color: #FFF !important; border:none !important; padding: 5px; border-radius: 8px;}
+#pos_blot_win_header{ border:none !important;}
+#pos_blot_win .x-docked-top{background-color: #FFF;}
+#pos_blot_win .x-window-body-default{border: none; background-image: none; background-color: #FFF;}
+#pos_blot_win .x-window-header-text-default{color: #FF6666; font-size: 14px; top: 0px; position: relative; 
+	left: 5px;}
+#pos_blot_win .x-window-body-default{top:0px !important;}
+#pos_blot_win .x-tool{top:1px !important;}
+#pos_blot_win-body .x-grid-with-row-lines #PositionBlotter-body table.x-grid-table .x-grid-cell{border:none;background-color: #f1f1f1;}
+/*--------------------------------POSITION BLOTTER----------------------------------------------------*/
+
+
+/*--------------------------------TRADE BLOTTER----------------------------------------------------*/
+#TradeBlotter{background-color: #FFF !important; border:none !important; padding: 5px;}
+#TradeBlotter_header{ border:none !important;}
+#TradeBlotter .x-docked-top{background-color: #FFF;}
+#TradeBlotter .x-window-body-default, 
+ #TradeBlotterTradeBlotterTradeBlotterTradeBlotterTradeBlotterTradeBlotterTradeBlotter .x-window-default, 
+ #TradeBlotterTradeBlotterTradeBlotterTradeBlotterTradeBlotterTradeBlotter .x-toolbar-footer .x-box-inner, 
+ #TradeBlotterTradeBlotterTradeBlotterTradeBlotterTradeBlotter .x-form-item-body,
+ #TradeBlotterTradeBlotterTradeBlotterTradeBlotter .x-border-box,
+ #TradeBlotterTradeBlotterTradeBlotter table tbody tr td, #TradeBlotterTradeBlotter table tbody, #TradeBlotter table tr td{border-color:#FFF; background-color: #FFF;}
+#TradeBlotter .cb{color:#FF6666; font-size: 14px; top: 0px; position: relative;
+			left: 0px;}
+#TradeBlotter{border: 3px solid #d6d6d6; border-radius: 5px; -webkit-box-shadow: -1px 6px 20px -6px rgba(195,195,195,1);
+-moz-box-shadow: -1px 6px 20px -6px rgba(195,195,195,1);
+box-shadow: -1px 6px 20px -6px rgba(195,195,195,1);}
+#TradeBlotter .x-panel-header{background-color: #FFF; border: 1px solid #FFF;}
+#TradeBlotter .x-title-text span{color: #FF6666;}
+.x-panel-header-title-default > .x-title-text-default:after{color:transparent;}
+#TradeBlotter span.cb_head{}
+#TradeBlotter .x-column-header-inner{color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4f4f4f), color-stop(0.33, #454545), color-stop(0.66, #343434), color-stop(1, #292929));
+  background-image: -o-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -moz-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -webkit-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -ms-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: linear-gradient(to bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4f4f4f', EndColorStr='#292929'); 
+  text-align: center; line-height: 35px;}
+#TradeBlotter .x-column-header-inner.x-column-header-over{background-color: #333 !important; text-align: center; line-height: 35px; background-image: none;}
+#TradeBlotter .x-grid-with-row-lines .x-grid-item{height: 40px;  vertical-align: middle;}
+#TradeBlotter .x-grid-with-row-lines .x-grid-td {vertical-align: middle; border-right: 1px solid #FFF; border-bottom: 1px solid #FFF;}
+#TradeBlotter .x-toolbar-default{border: 1px solid #FFF;}
+#TradeBlotter .x-toolbar-default{border: none; left: 295px !important;  top: -4px !important; background: transparent !important; width: 150px !important;}
+.removethis .x-btn-inner-default-toolbar-small,.addnew .x-btn-inner-default-toolbar-small{padding: 5px; border-radius: 5px; background-color: #F4F4F4; font-weight: normal;}
+#TradeBlotter .x-btn-default-toolbar-small{background-image: none; border:none; }
+#TradeBlotter .x-grid-cell-inner{color:#000; text-align: center !important;}
+#TradeBlotter .x-grid-header-ct{}
+#TradeBlotter .x-panel-header{background: #FFF;}
+#TradeBlotter .x-grid-header-ct{top:37px !important;}
+#TradeBlotter .x-panel-header-default .x-tool-img{background-color: #c1c1c1;}
+.bold-val{font-weight: bold; color: #000; font-size: 13px;}
+#TradeBlotter .x-grid-with-row-lines .x-grid-item{background-color: #ebebeb;}
+#TradeBlotter .x-column-header-text{color: #FFF;}
+#TradeBlotter #TradeBlotter-body{border:1px solid #FFF; top: 74px !important;}
+#TradeBlotter .x-tool{top:-2px !important;}
+#TradeBlotter #TradeBlotter-body .x-grid-cell{vertical-align: middle;}
+#TradeBlotter .x-panel-header-horizontal .x-tool, #TradeBlotter .x-window-header-horizontal .x-tool{top:0px !important;}
+
+#trade_blot_win{background-color: #FFF !important; border:none !important; padding: 5px; border-radius: 8px;}
+#trade_blot_win_header{ border:none !important;}
+#trade_blot_win .x-docked-top{background-color: #FFF;}
+#trade_blot_win .x-window-body-default{border: none; background-image: none; background-color: #FFF;}
+#trade_blot_win .x-window-header-text-default{color: #FF6666; font-size: 14px; top: 0px; position: relative; 
+	left: 5px;}
+#trade_blot_win .x-window-body-default{top:0px !important;}
+#trade_blot_win .x-tool{top:1px !important;}
+#TradeBlotter .x-box-item{border:none;}
+#trade_blot_win-body .x-grid-with-row-lines #TradeBlotter-body table.x-grid-table .x-grid-cell{border:none;background-color: #f1f1f1;}
+/*--------------------------------TRADE BLOTTER----------------------------------------------------*/
+
+.x-panel-header-text-default{color: #FF6666 !important;}
+.x-grid-header-row{display: none;}
+#CurrencyBlotter .x-grid-row-selected .x-grid-cell, .x-grid-row-selected .x-grid-rowwrap-div, #TradeBlotter .x-grid-row-selected .x-grid-cell, .x-grid-row-selected .x-grid-rowwrap-div, #PositionBlotter .x-grid-row-selected .x-grid-cell, .x-grid-row-selected .x-grid-rowwrap-div { border:none; background-color: #c1c1c1!important; vertical-align: middle;}
+.x-column-header-inner { font-size: 14px; }
+
+
+/*--------------------------------EYD QUICK TRADE----------------------------------------------------*/
+#qeydtrade{background-color: #FFF !important; border:none !important; padding: 5px;}
+#qeydtrade_header{ border:none !important;}
+#qeydtrade .x-docked-top{background-color: #FFF;}
+#qeydtrade .x-window-body-default, 
+ #qeydtrade .x-window-default, 
+ #qeydtrade .x-toolbar-footer .x-box-inner, 
+ #qeydtrade .x-form-item-body,
+ #qeydtrade .x-border-box,
+ #qeydtrade table tbody tr td, #qeydtrade table tbody, #qeydtrade table tr td{border-color:#FFF; background-color: #FFF;}
+#qeydtrade .x-window-header-text-default{color:#FF6666; font-size: 14px; top: 2px; position: relative;
+			left: 9px;}
+#qeydtrade table tbody tr td, #qeydtrade table tr td{text-align: left; font-size: 0.875rem;
+		color: #666; cursor: pointer; display: table-cell; font-weight: normal; margin: 0px; padding: 0px;}
+#qeydtrade input.x-form-field{height: auto; border-radius: 5px;}
+#qeydtrade .x-form-arrow-trigger{margin-top: 10px; right: 21px; background-position: -50px 1px;
+		position: relative; background-image: url("../images/down_arrow.png"); border: none;}
+#qeydtrade .ptcls input{}	
+#qeydtrade .ccypcls input{width: 47% !important;}		
+#qeydtrade .ccypcls .x-form-arrow-trigger{right: 160px; background-position: 48px 1px;}
+#qeydtrade .x-form-item-label{margin: 5px 0px 0px 10px;}
+#qeydtrade .tenorcls input{width: 30% !important;}	
+#qeydtrade #eydCombo-inputRow #eydCombo-labelCell,
+ #qeydtrade #ccypairCombo-inputRow #ccypairCombo-labelCell,
+ #qeydtrade #pptrueID-inputRow #pptrueID-labelCell,
+ #qeydtrade #tenorID-inputRow #tenorID-labelCell { height: 25px; float: left;}
+#qeydtrade #eydCombo-inputRow #eydCombo-bodyEl,
+ #qeydtrade #ccypairCombo-inputRow #ccypairCombo-bodyEl,
+ #qeydtrade #pptrueID-inputRow #pptrueID-bodyEl,
+ #qeydtrade #tenorID-inputRow #tenorID-bodyEl{width: 50%; float: left; margin-left: 9px;}
+#qeydtrade #ccypairCombo{top:65px !important;}
+#qeydtrade #pptrueID{top:130px !important;width: 230px !important;}
+#qeydtrade #tenorID{left: 224px !important; top: 131px !important;}
+#qeydtrade #qetID .x-btn-inner{color: #FFF; font-size: inherit;}
+#qeydtrade .x-docked-bottom {top: 204px !important; left: -17px !important;}
+#qeydtrade #pptrueID-triggerWrap #ext-gen1191{position: relative; right: 155px; bottom: 9px; background: transparent;}
+#qeydtrade #pptrueID-triggerWrap .x-form-spinner-up{
+	background-image: url("../images/down_arrow.png"); 
+	-webkit-transform: rotate(180deg);   -moz-transform: rotate(180deg);   transform: rotate(180deg);
+	background-position: 3px -3px;	right: 20px; position: relative; bottom: 11px;}
+#qeydtrade #pptrueID-triggerWrap .x-form-spinner-down{background-image: url("../images/down_arrow.png");
+	background-position: -2px -2px; right: 20px; position: relative; bottom: 7px;}
+#qeydtrade .x-panel-header-horizontal .x-tool, 
+#qeydtrade .x-window-header-horizontal .x-tool{top:0px !important;}
+#qeydtrade #tenorID-labelCell{width: 17%;}
+/*--------------------------------EYD QUICK TRADE END----------------------------------------------------*/
+
+.x-grid-with-row-lines .x-grid-cell{vertical-align: middle !important;}
+
+
+/*------------------------------START FX ADMIN TABS-------------------------------------*/
+#fxAdminTabs{margin-top: 15px;}
+#search_manage{width: 100%;}
+#search_manage #search_users{width: 50%; float: left;}
+#search_manage #manage_roles{width: 50%; float: left;}
+.title h3{font-weight: bold; width: 95%; font-size: 1.125rem; border-bottom: 1px solid #cfcfcf;
+			color: #ff6666; display: inline-block; margin: 0; padding: 0.5rem 0;}
+#fxAdminTabsID .x-tab{color: #333; background-color: #fff;  border: 0 none;
+			text-decoration: underline;}
+
+/*padding: 1.563rem 0.938rem 1rem;*/
+#fxAdminTabsID-body{/*top:21px !important;*/border-color:#FFF; 
+	border-radius: 0px 5px 5px 5px; top: 41px !important; left: 2px !important;}
+#fxAdminTabsID-body .x-panel-default{border-color:#FFF; }
+#fxAdminTabsID .x-tab-bar-strip{background-image: none; border-color: transparent; background-color: transparent;}
+#fxAdminTabsID .x-panel-body-default{border:none;}
+#fxAdminTabsID table tbody tr td {display: table-header-group;}
+#fxAdminTabsID #emptype-triggerWrap .x-form-trigger{position: relative; bottom: -10px; 
+  left: -10px; 
+	background-color: none; border: 0px; background-image: url("../images/down_arrow.png");
+	background-position: 0px 1px;}
+#fxAdminTabsID .x-anchor-form-item{margin: 0px;}
+#addUserID-body{padding: 0px;}
+#addUserID-body table {width: 170px; float: left; background-color: #FFF;}
+#addUserID-body table .x-form-item-label{text-align: left;font-size: 0.875rem;
+color: #666; margin-left: 2px;
+cursor: pointer;
+display: block;
+font-weight: normal;
+line-height: 1.5;
+margin-bottom: 3px;}
+#addUserID-body input[type="text"]{margin:0px; border-radius: 5px; padding: 20px; background-image: none;}
+#addUserID-body .ext-gen1074{display: block; margin: 0px; padding: 0px; height: 0px;}
+#addUserID-body #textfield-1018-inputEl {width: 200px !important;}
+#addUserID-body #textfield-1017-inputEl {width: 160px !important;}
+#add_user #addUserID-body table:nth-child(4), 
+ #add_user #addUserID-body table:nth-child(5){position: relative; right:170px; top:5px; z-index: 2;}
+#add_user #addUserID-body table:nth-child(3) input{width: 209px !important;}
+#add_user #addUserID-body table:nth-child(2) input{width: 160px !important; 
+	right: 47px; top: 9px; position: relative;}
+#add_user #addUserID-body table:nth-child(4){left: 288px; z-index: 9; top: -60px;}	
+#usercityID input{position: relative; right: 49px; top: 7px; width: 160px !important;}
+#add_user #addUserID-body table#userzipID{right: 256px; top: 5px;}
+#userzipID input{position: relative; right: 49px; top: 8px;}
+#add_user .x-panel .x-toolbar{left: -55px !important; top: 143px !important;
+	z-index: 10;}
+#emptype-triggerWrap input{width: 150px !important;}
+#usernameID{position: relative; left: 31px;}
+#add_user .x-panel .x-toolbar div.x-btn{border: none; background-color: #FFF; background: none;}
+#add_user .x-panel .x-toolbar button{  /*color: #000; padding: 0px 22px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fefefe), color-stop(0.33, #f3f3f3), color-stop(0.66, #e1e1e1), color-stop(1, #d1d1d1));
+  background-image: -o-linear-gradient(bottom, #fefefe 0%, #f3f3f3 33%, #e1e1e1 66%, #d1d1d1 100%);
+  background-image: -moz-linear-gradient(bottom, #fefefe 0%, #f3f3f3 33%, #e1e1e1 66%, #d1d1d1 100%);
+  background-image: -webkit-linear-gradient(bottom, #fefefe 0%, #f3f3f3 33%, #e1e1e1 66%, #d1d1d1 100%);
+  background-image: -ms-linear-gradient(bottom, #fefefe 0%, #f3f3f3 33%, #e1e1e1 66%, #d1d1d1 100%);
+  background-image: linear-gradient(to bottom, #fefefe 0%, #f3f3f3 33%, #e1e1e1 66%, #d1d1d1 100%);
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#fefefe', EndColorStr='#d1d1d1');
+  border: 1px solid #c0c0c0; height: 35px !important; width: 90px;
+  border-radius: 1000px 1000px 1000px 1000px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 300ms ease-out 0s;*/}
+  #add_user .x-toolbar{height: 60px;}
+  #add_user .x-toolbar-footer .x-box-inner ,#add_user .x-border-box,#add_user .x-border-box {height: 100% !important;}
+
+#addUserID .bold span{font-weight: bold;}
+#addUserID .white span{color: #FFF;}
+#addUserID .grey span{color: #666;}
+#addUserID .uppercase span{text-transform: uppercase;}
+#addUserID .fontsize11 span{font-size: 11px;}
+#add_user .x-panel .x-toolbar div.greyButton:hover,
+ #add_user .x-panel .x-toolbar div.greyButton:focus{
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d1d1d1), color-stop(0.33, #e1e1e1), color-stop(0.66, #f3f3f3), color-stop(1, #fefefe));
+  background-image: -o-linear-gradient(bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  background-image: -moz-linear-gradient(bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  background-image: -webkit-linear-gradient(bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  background-image: -ms-linear-gradient(bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  background-image: linear-gradient(to bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#d1d1d1', EndColorStr='#fefefe');
+}	
+
+#addUsersID-body table tbody tr td, #addUsersID-body table tr td{display: table-cell; border-right: 1px solid #FFF;
+	border-bottom: none; padding-left: 1px; height: auto;}
+#added_users .x-column-header-inner{
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4f4f4f), color-stop(0.33, #454545), color-stop(0.66, #343434), color-stop(1, #292929));
+  background-image: -o-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -moz-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -webkit-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: -ms-linear-gradient(bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  background-image: linear-gradient(to bottom, #4f4f4f 0%, #454545 33%, #343434 66%, #292929 100%);
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4f4f4f', EndColorStr='#292929'); 
+  text-align: left; line-height: 35px;}
+#added_users .x-grid-cell-last{float: none;}
+#addUsersID-body table tr.x-grid-row td{background: #ebebeb;}
+#addUsersID-body table tr.x-grid-row-alt td{background: #e0e0e0;}
+#added_users{float: left; padding-bottom: .625rem; border-radius: .25rem;; 
+	background-color: #dedede; width: 95.7%;}
+
+#fxAdminTabsID #useremailID{position: relative; right: 255px;}
+#fxAdminTabsID #useremailID input{right: 50px; position: relative;
+	top: 7px;}
+
+.usertitle h4 {
+  -moz-border-radius: 0.5rem 0.5rem 0 0;
+  -webkit-border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(0.1, #f1f1f1), color-stop(0.66, #eaeaea), color-stop(1, #dcdcdc));
+  background-image: -o-linear-gradient(bottom, #ffffff 0%, #f1f1f1 10%, #eaeaea 66%, #dcdcdc 100%);
+  background-image: -moz-linear-gradient(bottom, #ffffff 0%, #f1f1f1 10%, #eaeaea 66%, #dcdcdc 100%);
+  background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #f1f1f1 10%, #eaeaea 66%, #dcdcdc 100%);
+  background-image: -ms-linear-gradient(bottom, #ffffff 0%, #f1f1f1 10%, #eaeaea 66%, #dcdcdc 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 10%, #eaeaea 66%, #dcdcdc 100%);
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#f1f1f1', EndColorStr='#dcdcdc');
+  padding: 0.625rem;
+  margin-bottom: 1px;
+}
+.usertitle {
+ font-size: 0.938rem;
+  line-height: 1;
+  font-weight: bold;
+  color: #121212;
+  margin: 0;
+}  
+.addeduserlist h4 {width: 545px;}
+#manageUserRoleWrap{border-bottom: 1px solid #cfcfcf; padding-bottom: 20px; width: 95%;}
+#add_user, #manageUserRoleWrap{padding-top: 15px;}
+#manageUserRoleWrap #mangeUserImage{float: left; padding-top: 8px;}
+#manageUserRoleWrap #manageUserName{float: left;padding-left: 24px; margin: 0; color: #333;
+	font-size: 1.25rem;}
+#manageUserRoleWrap #manageUserRoleID table{background: none; position: absolute; 
+  top: 22px; left: 77px;}
+#manageUserRoleWrap #manageUserRoleID table tr td input{position: relative; left: -103px;
+  top: 21px;}
+#manageUserRoleWrap #manageUserRoleID table td{text-align: left;}
+#manageUserRoleWrap #manageUserRoleID table td label{font-size: 0.875rem; color: #666; cursor: pointer;
+	display: block; padding-top: 0px;
+	font-weight: normal;
+	line-height: 1.5;
+	margin-bottom: 0;}
+#manageUserRoleWrap #manageUserRoleID table td input{ -webkit-appearance: none; -webkit-border-radius: 0px;
+	background-color: #FFFFFF;
+	font-family: inherit;
+	border: 1px solid #cccccc;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: #333;
+	display: block;
+	font-size: 0.875rem;
+	margin: 0 0 1rem 0;
+	padding: 0.5rem;
+	height: 2.3125rem;
+	width: 458px !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: box-shadow 0.45s, border-color 0.45s ease-in-out; 	}
+#manageUserRoleWrap #manageUserRoleID-body{}
+
+.MainPanel .x-tab-bar-strip {
+    top: 40px !important; /* Default value is 20, we add 20 = 40 */    
+}
+
+.MainPanel .x-tab-bar .x-tab-bar-body {
+    height: 43px !important; /* Default value is 23, we add 20 = 43 */
+    border: 0 !important; /* Overides the border that appears on resizing the grid */
+}
+
+.MainPanel .x-tab-bar .x-tab-bar-body .x-box-inner {
+    height: 41px !important; /* Default value is 21, we add 20 = 41 */
+}
+
+.MainPanel .x-tab-bar .x-tab-bar-body .x-box-inner .x-tab {
+    height: 41px !important; /* Default value is 21, we add 20 = 41 */
+    margin-right: 3px;
+}
+
+.MainPanel .x-tab-bar .x-tab-bar-body .x-box-inner .x-tab button {
+    height: 15px !important; /* Default value 13, we add 20 = 33 */
+    line-height: 33px !important; /* Default value 13, we add 20 = 33 */    
+}
+.MainPanel .x-tab-bar .x-tab-bar-body .x-box-inner .x-box-item span{color: #333;}
+.MainPanel .x-tab-bar .x-tab-bar-body .x-box-inner .x-active span{text-decoration: underline;}	
+.MainPanel .x-tab-bar .x-tab-bar-body .x-box-inner .x-box-item{
+	-moz-border-radius: 0.25rem 0.25rem 0 0;
+	-webkit-border-radius: 0.25rem 0.25rem 0 0;
+	border-radius: 0.25rem 0.25rem 0 0;
+	border: 1px solid #bbbbbb;
+	font-size: 0.75rem;
+	line-height: 1.2;
+	font-weight: bold;
+	font-family: Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #666;
+	padding: 0.75rem 0.938rem;
+	text-decoration: none;
+	vertical-align: top;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d5d5d5), color-stop(0.33, #cbcbcb), color-stop(0.66, #b3b3b3), color-stop(1, #a8a8a8));
+	background-image: -o-linear-gradient(bottom, #d5d5d5 0%, #cbcbcb 33%, #b3b3b3 66%, #a8a8a8 100%);
+	background-image: -moz-linear-gradient(bottom, #d5d5d5 0%, #cbcbcb 33%, #b3b3b3 66%, #a8a8a8 100%);
+	background-image: -webkit-linear-gradient(bottom, #d5d5d5 0%, #cbcbcb 33%, #b3b3b3 66%, #a8a8a8 100%);
+	background-image: -ms-linear-gradient(bottom, #d5d5d5 0%, #cbcbcb 33%, #b3b3b3 66%, #a8a8a8 100%);
+	background-image: linear-gradient(to bottom, #d5d5d5 0%, #cbcbcb 33%, #b3b3b3 66%, #a8a8a8 100%);
+	filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#d5d5d5', EndColorStr='#a8a8a8');
+	box-shadow: none;
+}
+.MainPanel .x-tab-bar .x-tab-bar-body .x-box-inner .x-active{background: #FFF; }
+.MainPanel .x-tab-bar .x-tab-bar-body .x-box-inner .x-tab-default-top{
+		border-bottom: 1px solid #FFF !important;}
+/*------------------------------START FX ADMIN TABS-------------------------------------*/
+
+/*======================================================================================*/
+
+/*-------------------------------- START USER PREVILEDGES --------------------------------------*/
+#privilegesWrap .prvl_label{font-size: .75rem; font-weight: bold; color: #333; margin: .375rem 0 0;
+	padding: .625rem 0;}
+#privilegesWrap #prvlButtonsID{background-color: #b9b9b9; -moz-border-radius: .25rem; 
+	-webkit-border-radius: .25rem;
+	border-radius: .25rem;
+	padding: .613rem;}
+#privilegesWrap #prvlButtonsID .x-btn{ 
+	background-color: #e0e0e0; background-image: none; width: 29.33% !important; margin-left: 15px;
+	-moz-border-radius: .25rem;
+	-webkit-border-radius: .25rem;
+	border-radius: .25rem;
+	border: 1px solid #ccc;
+	padding: .625rem;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+#privilegesWrap .content .acronym { margin-right: .125rem; float: left;}
+#privilegesWrap #prvlButtonsID div:nth-of-type(3n+1) .acronym{ background-color: #a36262; }
+#privilegesWrap #prvlButtonsID div:nth-of-type(3n+2) .acronym{ background-color: #525252; }
+#privilegesWrap #prvlButtonsID div:nth-of-type(3n) .acronym{ background-color: #a38262; }
+#privilegesWrap .content label { padding-top: 4px; float: left; padding-left: 7px;}
+#privilegesWrap #prvl_reports-btnWrap{}
+#prvl_can , #prvl_save {font-size: 0.75rem; padding: 0.625rem 1.25rem; 
+		border-radius: 1000px 1000px 1000px 1000px; height: auto !important;
+		font-family: Verdana,Arial,sans-serif;}	
+#prvl_can:hover,#prvl_can:focus{
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d1d1d1), color-stop(0.33, #e1e1e1), color-stop(0.66, #f3f3f3), color-stop(1, #fefefe));
+  background-image: -o-linear-gradient(bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  background-image: -moz-linear-gradient(bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  background-image: -webkit-linear-gradient(bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  background-image: -ms-linear-gradient(bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  background-image: linear-gradient(to bottom, #d1d1d1 0%, #e1e1e1 33%, #f3f3f3 66%, #fefefe 100%);
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#d1d1d1', EndColorStr='#fefefe');
+}		
+#prvl_save:hover,#prvl_save:focus{
+  background: #d12b2b;
+  background: -moz-linear-gradient(top, #d12b2b 0%, #f34d4d 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #d12b2b), color-stop(100%, #f34d4d));
+  background: -webkit-linear-gradient(top, #d12b2b 0%, #f34d4d 100%);
+  background: -o-linear-gradient(top, #d12b2b 0%, #f34d4d 100%);
+  background: -ms-linear-gradient(top, #d12b2b 0%, #f34d4d 100%);
+  background: linear-gradient(to bottom, #d12b2b 0%, #f34d4d 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d12b2b', endColorstr='#f34d4d', GradientType=0 );
+}
+#prvl_can{color: #666; border: 1px solid #d3d3d3;background: #f7f7f7;
+	background: -moz-linear-gradient(top, #f7f7f7 0%, #d1d1d1 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #d1d1d1));
+	background: -webkit-linear-gradient(top, #f7f7f7 0%, #d1d1d1 100%);
+	background: -o-linear-gradient(top, #f7f7f7 0%, #d1d1d1 100%);
+	background: -ms-linear-gradient(top, #f7f7f7 0%, #d1d1d1 100%);
+	background: linear-gradient(to bottom, #f7f7f7 0%, #d1d1d1 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#d1d1d1', GradientType=0 );}
+#prvl_save{color: #FFF; border: 1px solid #b42525; background: #f34d4d;
+	background: -moz-linear-gradient(top, #f34d4d 0%, #d12b2b 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #f34d4d), color-stop(100%, #d12b2b));
+	background: -webkit-linear-gradient(top, #f34d4d 0%, #d12b2b 100%);
+	background: -o-linear-gradient(top, #f34d4d 0%, #d12b2b 100%);
+	background: -ms-linear-gradient(top, #f34d4d 0%, #d12b2b 100%);
+	background: linear-gradient(to bottom, #f34d4d 0%, #d12b2b 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f34d4d', endColorstr='#d12b2b', GradientType=0 );}
+#privilegesWrap .bold span{font-weight: bold;}
+#privilegesWrap .white span{color: #FFF;}
+#privilegesWrap .grey span{color: #666;}
+/*-------------------------------- END USER PREVILEDGES --------------------------------------*/
+
+/*-------------------------------- START USER CURRENT PREVILEDGES -------------------------------------*/
+#curprivilegesWrap .cur_label{font-size: .75rem; font-weight: bold; color: #333; margin: .375rem 0 0;
+	padding: .625rem 0;}
+#curprivilegesWrap #curButtonsID{background-color: #b9b9b9; -moz-border-radius: .25rem; 
+	-webkit-border-radius: .25rem;
+	border-radius: .25rem;
+	padding: .613rem;}
+#curprivilegesWrap #curButtonsID .x-btn{ margin-bottom: 7px;
+	background-color: #e0e0e0; background-image: none; width: 29.33% !important; margin-left: 15px;
+	-moz-border-radius: .25rem;
+	-webkit-border-radius: .25rem;
+	border-radius: .25rem;
+	border: 1px solid #ccc;
+	padding: .625rem;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+#curprivilegesWrap .content .acronym { margin-right: .125rem; float: left; text-transform: uppercase;}
+#curprivilegesWrap .content label{text-transform: capitalize;}
+#curprivilegesWrap #curButtonsID div:nth-of-type(3n+1) .acronym{ background-color: #a36262; }
+#curprivilegesWrap #curButtonsID div:nth-of-type(3n+2) .acronym{ background-color: #525252; }
+#curprivilegesWrap #curButtonsID div:nth-of-type(3n) .acronym{ background-color: #a38262; }
+#curprivilegesWrap .content label { padding-top: 4px; float: left; padding-left: 7px;}
+/*-------------------------------- END USER CURRENT PREVILEDGES -------------------------------------*/
+
+/*--------------------------------FX ADMIN TABS END----------------------------------------------------*/
+
+/*--------------------------------START WORKSPACE COMBO----------------------------------*/
+#wsDivID{height: 41px;}
+.width160{width: 160px;}
+#wsDivID #wsId-triggerWrap{background: none;}
+#wsDivID #wsId-inputCell,#wsDivID #wsId-bodyEl{padding: 0px;}
+#wsDivID #wsId-inputCell{width: 29px; padding: 0px; position: relative;
+  left: 33px; top: -2px;}
+#wsDivID #wsId-inputCell #wsId-inputEl{background: transparent; background-image: none;
+  border: none;box-shadow: none; font-size: 12px;}
+
+ #wsDivID #wsId-triggerWrap .x-form-arrow-trigger{position: relative; left: -28px; top: -3px;
+  background-color: transparent; border: none; border-color: transparent; 
+  background-image: url("../images/down_arrow.png"); background-position: 1px 3px;}
+/*--------------------------------END WORKSPACE COMBO------------------------------------*/
+
+.uppercase { text-transform: uppercase; }
+.main, .x-body{background: #e0e0e0; background-color: #e0e0e0;}
+#add_user .x-panel .x-toolbar div.greyButton{color: #666; border: 1px solid #d3d3d3;
+	background: #f7f7f7; font-size: 0.75rem;
+	padding: 0.625rem 1.25rem;
+	border-radius: 1000px 1000px 1000px 1000px;
+	height: auto !important;
+	font-family: Verdana,Arial,sans-serif;
+	background: -moz-linear-gradient(top, #f7f7f7 0%, #d1d1d1 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #d1d1d1));
+	background: -webkit-linear-gradient(top, #f7f7f7 0%, #d1d1d1 100%);
+	background: -o-linear-gradient(top, #f7f7f7 0%, #d1d1d1 100%);
+	background: -ms-linear-gradient(top, #f7f7f7 0%, #d1d1d1 100%);
+	background: linear-gradient(to bottom, #f7f7f7 0%, #d1d1d1 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#d1d1d1', GradientType=0 );}
+.x-panel .x-panel-body div.x-container .x-btn.overme{border:1px solid #FFF !important;}
+.x-panel .x-panel-body div.x-container .x-btn.meselected{border:1px solid #FFF !important;}

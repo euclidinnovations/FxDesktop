@@ -1,0 +1,39 @@
+
+<div draggable class="widget xxlarge-3 xlarge-4 large-4 medium-6 small-12 columns portlet" ng-init="minimize=false; show=true;" ng-show="show">
+  <div class="container">
+    <div class="portlet-header">
+      <ul class="right widget-menu">
+        <li>
+          <a href="#" data-dropdown="pb-settings-drop" aria-controls="pb-settings-drop" data-options="align:left" aria-expanded="false">
+            <span class="icon-settings"></span>
+          </a>
+          <ul id="pb-settings-drop" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+            <li><a href="#" ng-click="minimize=!minimize">Minimize</a></li>
+            <li><a href="#">Fullscreen</a></li>
+            <li><a href="#" ng-click="show=false">Close</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h3>POSITION BLOTTER</h3>
+    </div><!-- .header ends -->
+    <div class="section" ng-hide="minimize">
+      <table class="responsive position-blotter" role="grid">
+        <thead>
+          <tr>
+            <th>CCY Pair</th>
+            <th width="45%">Net USD Position</th>
+            <th>Net Profit Loss</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="ccy in data | orderBy:'baseCurrency'">
+          <tr class="{{ ccy.npUpDown?'green':'red' }}">
+            <td class="dark">{{(ccy.baseCurrency+"/"+ccy.counterCurrency) | uppercase}}</td>
+            <td class="net-position"> {{ccy.netPosition|number:2}} <span class="icon-np"></span></td>
+            <td>{{ccy.netPL|number:2}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- section ends -->
+    
+  </div> 
+</div> 

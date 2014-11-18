@@ -1,0 +1,55 @@
+
+<div draggable class="widget xxlarge-6 xlarge-12 large-12 medium-12 small-12 columns portlet" ng-init="minimize=false; show=true;" ng-show="show">
+  <div class="container">
+    <div class="portlet-header">
+      <ul class="right widget-menu">
+        <li>
+          <a href="#" data-dropdown="tb-settings-drop" aria-controls="tb-settings-drop" data-options="align:left" aria-expanded="false">
+            <span class="icon-settings"></span>
+          </a>
+          <ul id="tb-settings-drop" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+            <li><a href="#" ui-event="{click: '$parent.openDialog($event)'}" data-options='{"id": "settings-trade-blotter"}'>Settings</a></li>
+            <li><a href="#" ng-click="minimize=!minimize">Minimize</a></li>
+            <li><a href="#">Fullscreen</a></li>
+            <li><a href="#" ng-click="show=false">Close</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h3>TRADE BLOTTER</h3>
+    </div><!-- .header ends -->
+    <div class="section trade-blotter" ng-hide="minimize">
+      <table class="responsive" style="height: {{table_height*18}}px" role="grid">
+        <thead>
+          <tr>
+            <th width="6%">ID</th>
+            <th width="8%">Product</th>
+            <th width="8%">CCY Pair</th>
+            <th width="6%">Spot Book</th>
+            <th width="20%">Amount</th>
+            <th width="20%">CTR Amount</th>
+            <th width="8%">Market Rate</th>
+            <th width="8%">Customer All in Rate</th>
+            <th width="4%">P/S</th>
+            <th width="4%">BR</th>
+            <th width="8%">Status</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="entry in data" >
+          <tr>
+            <td>{{entry.id}}</td>
+            <td>{{entry.product|uppercase}}</td>
+            <td>{{entry.ccp|uppercase}}</td>
+            <td>{{entry.spotBook|uppercase}}</td>
+            <td>{{entry.amount|currency}}</td>
+            <td>{{entry.ctrAmount|currency}}</td>
+            <td>{{entry.marketRate|number:4}}</td>
+            <td>{{entry.customerAllInRate|currency}}</td>
+            <td>{{entry.ps|uppercase}}</td>
+            <td>{{entry.br|uppercase}}</td>
+            <td>{{entry.status|uppercase}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- section ends -->
+  </div> 
+</div>
